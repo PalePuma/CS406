@@ -1,0 +1,27 @@
+<p> <!-- card -->
+<div class="card border-primary" style="width: 50%"> 
+    
+    <div class="card-header">
+    </div>
+    
+    <div class="card-body">
+      <h5 class ="card-title"><%= blog.blogTitle %></h5>
+        <p><%= blog.blogText %></p>
+        <p><%= blog.createdOn %></p>
+    </div>
+    
+    <div class="card-footer">
+      <div class = "col-sm">
+        <ul class="nav justify-content-end nav-pills card-header-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="/edit-blog">Edit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/delete-blog">Delete</a>
+          </li>
+        </ul>
+      </div>  
+    </div>
+
+</div>
+</p>
