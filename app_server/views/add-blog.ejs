@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fontawesome-all.css">
+</head>
+<body>
+  <div class="container">
+
+   <% include ./partials/nav %>
+   <p><h2><%= title %></h2></p>
+  
+   <div class="card border-success" style="width: 50%; border-width: 2px;">
+
+     <form method="post" action="/add-blog" style="padding: 20px;">
+	<div class="form-group">
+	  <label style="width: 100%">
+	    <strong>Blog Title</strong>
+	    <input class="form-control" id="title" name="title" type="text">
+	  </label>
+	</div>
+
+	<div class="form-group">
+	  <label style="width: 100%">
+	    <strong>Blog Text</strong>
+	    <textarea class="form-control" id="text" name="text" rows="5"></textarea>
+	  </label>
+	</div>
+
+	<div class="text-right">
+	  <input class="btn btn-success" value="Add Blog" type="submit">
+	</div>
+     </form>
+
+   </div>
+  </div> <!-- container -->
+</body>
+</html>

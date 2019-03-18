@@ -1,0 +1,32 @@
+<p> <!-- card -->
+<div class="card border-success" style="width: 50%; border-width: 2px;"> 
+   
+    <div class="card-header">
+    </div>
+    
+    <div class="card-body">
+      <h5 class ="card-title"><%= blog.blogTitle %></h5>
+        <p><%= blog.blogText %></p>
+        <p>
+           <%= new Date(blog.createdOn).toLocaleString(
+           'en-US',
+           {month: 'long', day:'numeric', year:'numeric', hour:'numeric', minute:'2-digit'});%>
+        </p>
+    </div>
+    
+    <div class="card-footer">
+      <div class = "col-sm">
+        <ul class="nav justify-content-end nav-pills card-header-pills">
+          <li class="nav-item">
+            <a class="nav-link text-success" href="/edit-blog/<%= blog._id %>">Edit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="/delete-blog/<%= blog._id %>">Delete</a>
+          </li>
+        </ul>
+      </div>  
+    </div>
+
+</div>
+</p>
+

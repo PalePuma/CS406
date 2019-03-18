@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fontawesome-all.css">
+  </head>
+<body>
+  <div class="container">
+    <% include ./partials/nav %>
+    <p><h2><%= title %></h2></p>
+
+	<% if (messageTitle && message) { %>
+	<div class="alert alert-info">
+	    <strong><%= messageTitle %></strong>
+	    &nbsp;<%= message %>
+	</div>
+	<% }; %>
+
+	<% blogs.forEach(function(blog) { %>
+	  <% include ./partials/card %>
+	<% }); %>
+
+  </body>
+</html>

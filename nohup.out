@@ -1,0 +1,72 @@
+
+> 2lab@0.0.0 start /home/bitnami/4lab
+> node ./bin/www
+
+Mongoose connected to mongodb://blogsuser:blogspwd@localhost:27017/blogs
+[0mGET / [36m304 [0m11.631 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.872 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.297 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m3.697 ms - 992[0m
+Fetching all blog documents
+[ { _id: 5c8f45898051331e33796c64,
+    blogTitle: 'Blog Post #1',
+    blogText: 'This is my first blog post.',
+    createdOn: 2019-03-18T07:15:21.791Z,
+    __v: 0 },
+  { _id: 5c8f45a98051331e33796c65,
+    blogTitle: 'Blog Post #2',
+    blogText: 'This is my second blog post.',
+    createdOn: 2019-03-18T07:15:53.209Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m31.842 ms - 302[0m
+Documents Found: 2
+[0mGET /blog-list [36m304 [0m51.306 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.390 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.817 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m3.663 ms - 992[0m
+[0mGET /add-blog [32m200 [0m1.403 ms - 1399[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.304 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.747 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m1.810 ms - 992[0m
+Fetching all blog documents
+[ { _id: 5c8f45898051331e33796c64,
+    blogTitle: 'Blog Post #1',
+    blogText: 'This is my first blog post.',
+    createdOn: 2019-03-18T07:15:21.791Z,
+    __v: 0 },
+  { _id: 5c8f45a98051331e33796c65,
+    blogTitle: 'Blog Post #2',
+    blogText: 'This is my second blog post.',
+    createdOn: 2019-03-18T07:15:53.209Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m3.462 ms - 302[0m
+Documents Found: 2
+[0mGET /blog-list [36m304 [0m9.750 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.332 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.716 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m1.791 ms - 992[0m
+[0mGET / [36m304 [0m1.168 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.346 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.740 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m1.861 ms - 992[0m
+Fetching all blog documents
+[ { _id: 5c8f45898051331e33796c64,
+    blogTitle: 'Blog Post #1',
+    blogText: 'This is my first blog post.',
+    createdOn: 2019-03-18T07:15:21.791Z,
+    __v: 0 },
+  { _id: 5c8f45a98051331e33796c65,
+    blogTitle: 'Blog Post #2',
+    blogText: 'This is my second blog post.',
+    createdOn: 2019-03-18T07:15:53.209Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m2.532 ms - 302[0m
+Documents Found: 2
+[0mGET /blog-list [36m304 [0m7.291 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.357 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.727 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m1.808 ms - 992[0m
+[0mGET /add-blog [36m304 [0m1.260 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.351 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.734 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m1.654 ms - 992[0m
