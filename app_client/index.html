@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html ng-app="blogApp">
+<head>
+  <script src="/js/angular.min.js"></script>
+  <script src="/js/angular-route.min.js"></script>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <title>David's Blog</title>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-success">
+      <a class="navbar-brand" href="#!/">My Blog</a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#!/blog-list">Blog List</a>
+          <a class="nav-item nav-link active" href="#!/add-blog">Add Blog</a>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Angular View -->
+  <div ng-view></div>
+ 
+  <!-- Angular Templates -->
+  <script type="text/ng-template" id="blog-home">
+   <div class="container">
+      <p><h2>{{ vm.pageHeading }}</h2></p>
+      <p>Welcome to my blog!</p>
+   </div>
+  </script>
+
+  <script type="text/ng-template" id="blog-list">
+  <div class="container">
+   <p><h2>{{ vm.pageHeading }}</h2></p>
+
+   <div class="card border-success" ng-repeat="blog in vm.blogs"
+   style="width: 50%; border-width: 2px; margin-bottom: 30px;">
+
+       <div class="card-header">
+       </div>
+
+       <div class="card-body">
+        <h5 class ="card-title">{{ blog.blogTitle  }}</h5>
+	<p>{{ blog.blogText  }}</p>
+        <p>{{ blog.createdOn | date:'MMMM dd, yyyy - h:mm a'}}</p>
+       </div>
+
+       <div class="card-footer">
+         <div class = "col-sm">
+           <ul class="nav justify-content-end nav-pills card-header-pills">
+             <li class="nav-item">
+               <a class="nav-link text-success" href="#!/edit-blog/{{ blog._id  }}">Edit</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link text-success" href="#!/delete-blog/{{ blog._id }}">Delete</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+   </div>
+  </div> 
+  </script>
+
+  <script type="text/ng-template" id="add-blog">
+  <div class="container">
+  <p><h2>{{ vm.pageHeading }}</h2></p>
+
+   <div class="card border-success" style="width: 50%; border-width: 2px;">
+
+     <form name="userForm" ng-submit="vm.submit()" action="#!/blog-list" method="post" style="padding: 20px;">
+        <div class="form-group">
+          <label style="width: 100%">
+            <strong>Blog Title</strong>
+            <input class="form-control" id="title" name="title">
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label style="width: 100%">
+            <strong>Blog Text</strong>
+            <textarea class="form-control" id="text" name="text" rows="5"></textarea>
+          </label>
+        </div>
+
+        <div class="text-right">
+	  <input type="submit" class="btn btn-success" value="Add Blog">
+	</div>
+     </form>
+   </div>
+  </div> <!-- container -->
+  </script>
+
+  <script type="text/ng-template" id="delete-blog">
+  <div class="container">
+  <p><h2>{{ vm.pageHeading }}</h2></p>
+
+   <div class="card border-success" style="width: 50%; border-width: 2px;">
+
+     <form ng-submit="vm.submit()" action="#!/blog-list" style="padding: 20px;">
+        <div class="form-group">
+          <label style="width: 100%">
+            <strong>Blog Title</strong>
+            <input class="form-control" type="text" value="{{ vm.blog.blogTitle }}" readonly>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label style="width: 100%">
+            <strong>Blog Text</strong>
+            <textarea class="form-control" rows="5" readonly>{{ vm.blog.blogText }}</textarea>
+          </label>
+        </div>
+
+        <div class="text-right">
+          <input class="btn btn-danger float-right" value="Delete" type="submit">
+	  <a class="btn btn-secondary float-right" style="margin-right: 20px" href="#!/blog-list" role="button">Cancel</a>
+        </div>
+     </form>
+   </div>
+  </div> <!-- container -->
+  </script>
+
+  <script type="text/ng-template" id="edit-blog">
+  <div class="container">
+  <p><h2>{{ vm.pageHeading }}</h2></p>
+
+   <div class="card border-success" style="width: 50%; border-width: 2px;">
+
+     <form ng-submit="vm.submit()" name="userForm" method="post" action="#!/blog-list" style="padding: 20px;">
+        <div class="form-group">
+          <label style="width: 100%">
+            <strong>Blog Title</strong>
+            <input class="form-control" id="title" name="title" type="text" value="{{ vm.oldData.blogTitle }}">
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label style="width: 100%">
+            <strong>Blog Text</strong>
+            <textarea id="text" name="text" class="form-control" rows="5">{{ vm.oldData.blogText }}</textarea>
+          </label>
+        </div>
+
+        <div class="text-right">
+          <input class="btn btn-success float-right" value="Save Changes" type="submit">
+	  <a class="btn btn-secondary float-right" style="margin-right: 20px" href="#!/blog-list" role="button">Cancel</a>
+        </div>
+     </form>
+   </div>
+  </div> <!-- container -->
+  </script>
+
+  <!-- blogApp JavaScript  -->
+  <script src="blogApp.js"></script>
+
+</body>
+</html>
