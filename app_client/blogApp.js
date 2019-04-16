@@ -28,6 +28,16 @@ app.config(['$routeProvider', function($routeProvider) {
 	   controller: 'EditCtrl',
 	   controllerAs: 'vm'
 	})
+	.when('/register', {
+	   templateUrl: 'register',
+	   controller: 'RegisterCtrl',
+	   controllerAs: 'vm'
+	})
+	.when('/login', {
+	   templateUrl: 'login',
+	   controller: 'LoginCtrl',
+	   controllerAs: 'vm'
+	})
 	.otherwise({redirectTo: '/'});
 }]);
 
@@ -37,9 +47,10 @@ app.controller('HomeCtrl', function HomeCtrl() {
 	vm.pageHeading = "David's Blog";
 });
 
-app.controller('ListCtrl', function ListCtrl($http) {
+app.controller('ListCtrl', ['$http', 'authentication', function ListCtrl($http, authentication) {
 	var vm = this;
-	vm.pageHeading = "Blog List"; 
+	vm.pageHeading = "Blog List";
+        vm.isLoggedIn = authentication.isLoggedIn();
 
 	blogsListAll($http)
 	  .then(function onSuccess(response) {
@@ -49,9 +60,9 @@ app.controller('ListCtrl', function ListCtrl($http) {
 	  .catch(function onError(response) {
 	    vm.message = "Error: Could not get the blog list.";
 	  });
-});
+}]);
 
-app.controller('AddCtrl', function AddCtrl($http) {
+app.controller('AddCtrl', ['$http','authentication', function AddCtrl($http, authentication) {
 	var vm = this;
 	vm.pageHeading = "Add Blog";
 	vm.data = {
@@ -65,7 +76,7 @@ app.controller('AddCtrl', function AddCtrl($http) {
 	  vm.data.text = userForm.text.value;
 	  vm.data.date = Date.now();
 
-	  blogsCreate($http, vm.data)
+	  blogsCreate($http, authentication, vm.data)
 	    .then(function onSuccess(response) {
 	      console.log("Success! Status: "+response.status);	 
      	      console.log(response.data);
@@ -73,11 +84,12 @@ app.controller('AddCtrl', function AddCtrl($http) {
 	    .catch(function onError(response) {
 	      console.log("Error! HTTP Status: "+response.status);	       
 	      console.log(response.data);
+alert(response.data);
 	    });
 	}
-});
+}]);
 
-app.controller('DeleteCtrl', ['$http', '$routeParams', function DeleteCtrl($http, $routeParams) {
+app.controller('DeleteCtrl', ['$http', '$routeParams', 'authentication', function DeleteCtrl($http, $routeParams, authentication) {
 	var vm = this;
 	vm.pageHeading = "Delete Blog";
 	vm.id = $routeParams.id;
@@ -95,7 +107,7 @@ app.controller('DeleteCtrl', ['$http', '$routeParams', function DeleteCtrl($http
 	    });
 
 	vm.submit = function() {
-	  blogsDeleteOne($http, vm.id)
+	  blogsDeleteOne($http, authentication, vm.id)
 	    .then(function onSuccess(response) {
 	      console.log("Successful Deletion! Status: "+response.status);	  
 	      console.log(response.data);
@@ -107,7 +119,7 @@ app.controller('DeleteCtrl', ['$http', '$routeParams', function DeleteCtrl($http
 	}
 }]);
 
-app.controller('EditCtrl', ['$http', '$routeParams', function EditCtrl($http, $routeParams) {
+app.controller('EditCtrl', ['$http', '$routeParams', 'authentication', function EditCtrl($http, $routeParams, authentication) {
 	var vm = this;
 	vm.pageHeading = "Edit Blog";
 	vm.id = $routeParams.id;
@@ -130,7 +142,7 @@ app.controller('EditCtrl', ['$http', '$routeParams', function EditCtrl($http, $r
 	  vm.newData.text = userForm.text.value;
 	  vm.newData.date = Date.now();	  
           
-	  blogsUpdateOne($http, vm.id, vm.newData)
+	  blogsUpdateOne($http, authentication, vm.id, vm.newData)
 	    .then(function onSuccess(response) {
 	      console.log("Successful Update! Status: "+response.status);	  
 	      console.log(response.data);
@@ -147,18 +159,24 @@ function blogsListAll($http) {
 	return $http.get('/api/blogs');
 }
 
-function blogsCreate($http, data) {
-	return $http.post('/api/blogs/', data);
+function blogsCreate($http, authentication, data) {
+	return $http.post('/api/blogs/', data, {
+		headers: { Authorization: 'Bearer ' + authentication.getToken() }
+	});
 }
 
 function blogsReadOne($http, id) {
 	return $http.get('/api/blogs/' + id); 
 }
 
-function blogsUpdateOne($http, id, data) {
-	return $http.put('/api/blogs/' + id, data);
+function blogsUpdateOne($http, authentication, id, data) {
+	return $http.put('/api/blogs/' + id, data, {
+		headers: { Authorization: 'Bearer ' + authentication.getToken() }
+	});
 }
 
-function blogsDeleteOne($http, id) {
-	return $http.delete('/api/blogs/' + id); 
+function blogsDeleteOne($http, authentication, id) {
+	return $http.delete('/api/blogs/' + id, {
+		headers: { Authorization: 'Bearer ' + authentication.getToken() }
+	}); 
 }

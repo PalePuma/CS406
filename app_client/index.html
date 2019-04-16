@@ -10,16 +10,9 @@
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-success">
-      <a class="navbar-brand" href="#!/">My Blog</a>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#!/blog-list">Blog List</a>
-          <a class="nav-item nav-link active" href="#!/add-blog">Add Blog</a>
-          </div>
-      </div>
-  </nav>
+  <div ng-controller="NavigationCtrl">
+	<navigation></navigation>  
+  </div>
 
   <!-- Angular View -->
   <div ng-view></div>
@@ -48,7 +41,7 @@
         <p>{{ blog.createdOn | date:'MMMM dd, yyyy - h:mm a'}}</p>
        </div>
 
-       <div class="card-footer">
+       <div class="card-footer" ng-show="vm.isLoggedIn">
          <div class = "col-sm">
            <ul class="nav justify-content-end nav-pills card-header-pills">
              <li class="nav-item">
@@ -153,8 +146,65 @@
   </div> <!-- container -->
   </script>
 
+  <script type="text/ng-template" id="register">
+   <div class="container">
+
+      <p><h2>{{ vm.pageHeading.title  }}</h2></p>
+      <p class="lead">Already a member? Please <a href="#!/login">log in</a> instead.</p>
+     
+    <div class="card border-success" style="width: 50%; border-width: 2px;">
+      <form ng-submit="vm.submit()" style="padding: 20px;">
+        <div role="alert" ng-show="vm.formError" class="alert alert-danger">{{ vm.formError }}</div>
+        <div class="form-group">
+          <label for="name"><strong>Full name</strong></label>
+          <input type="text" class="form-control" id="name" placeholder="First & Last" ng-model="vm.credentials.name">
+        </div>
+        <div class="form-group">
+          <label for="email"><strong>Email address</strong></label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email address" ng-model="vm.credentials.email">
+        </div>
+        <div class="form-group">
+          <label for="password"><strong>Password</strong></label>
+          <input type="password" class="form-control" id="password" placeholder="Create a new password" ng-model="vm.credentials.password">
+        </div>
+        <div class="text-right ">
+          <input class="btn btn-success float-right" value="Create Account" type="submit">
+        </div>
+       </form> 
+     </div>
+   </div> <!-- container -->
+  </script>
+
+  <script type="text/ng-template" id="login">
+   <div class="container">
+
+      <p><h2>{{ vm.pageHeading.title  }}</h2></p>
+      <p class="lead">Not a member? Please <a href="#!/register?page={{ vm.returnPage }}">register</a> first.</p>
+     
+    <div class="card border-success" style="width: 50%; border-width: 2px;">
+      <form ng-submit="vm.submit()" style="padding: 20px;">
+        <div role="alert" ng-show="vm.formError" class="alert alert-danger">{{ vm.formError }}</div>
+        <div class="form-group">
+           <label for="email"><strong>Email address</strong></label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email address" ng-model="vm.credentials.email">
+        </div>
+        <div class="form-group">
+          <label for="password"><strong>Password</strong></label>
+          <input type="password" class="form-control" id="password" placeholder="Enter password" ng-model="vm.credentials.password">
+        </div>
+        <div class="text-right ">
+          <input class="btn btn-success float-right" value="Sign In" type="submit">
+        </div>
+       </form> 
+     </div>
+   </div> <!-- container -->
+  </script>
+
+
   <!-- blogApp JavaScript  -->
   <script src="blogApp.js"></script>
+  <script src="/common/auth/authentication.service.js"></script>
+  <script src="/common/nav/navigation.js"></script>
 
 </body>
 </html>

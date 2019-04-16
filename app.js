@@ -1,10 +1,13 @@
-var createError = require('http-errors');
+require('dotenv').config();
 var express = require('express');
+var createError = require('http-errors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-require('dotenv').config();
+var passport = require('passport');
+
 require('./app_api/models/db');
+require('./app_api/config/passport');
 
 var routesAPI = require('./app_api/routes/index');
 var usersRouter = require('./app_server/routes/users');
@@ -20,6 +23,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'app_client')));
+
+app.use(passport.initialize());
 
 app.use('/api', routesAPI);
 app.use('/users', usersRouter);
@@ -41,7 +46,18 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
-// error handler
+
+// error handlers
+
+// Catch unauthorized errors
+app.use(function (err, req, res, next) {
+  if (err.name === 'UnauthorizedError') {
+    res.status(401);
+    res.json({"message" : err.name + ": " + err.message});
+  }
+});
+
+// development
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;

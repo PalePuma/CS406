@@ -43,4 +43,6 @@ process.on('SIGTERM', function() {
     process.exit(0);
 }); });
 
+// Bring in Schemas
 require('./blogs');
+require('./users');
