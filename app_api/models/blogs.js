@@ -12,6 +12,14 @@ var blogSchema = new mongoose.Schema({
         createdOn: {
 	 type: Date,
 	 required: true
+	},
+        authorName: {
+	 type: String,
+	 required: true
+	},
+        authorEmail: {
+	 type: String,
+	 required: true
 	}
 });
 

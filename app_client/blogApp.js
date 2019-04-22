@@ -49,8 +49,9 @@ app.controller('HomeCtrl', function HomeCtrl() {
 
 app.controller('ListCtrl', ['$http', 'authentication', function ListCtrl($http, authentication) {
 	var vm = this;
-	vm.pageHeading = "Blog List";
+	vm.currentUser = authentication.currentUser();
         vm.isLoggedIn = authentication.isLoggedIn();
+	vm.pageHeading = "Blog List";
 
 	blogsListAll($http)
 	  .then(function onSuccess(response) {
@@ -68,13 +69,17 @@ app.controller('AddCtrl', ['$http','authentication', function AddCtrl($http, aut
 	vm.data = {
 		title: '',
 		text: '',
-		date: null
+		date: null,
+		author: '',
+	 	email: ''
 	};
 	
 	vm.submit = function() {
 	  vm.data.title = userForm.title.value;
 	  vm.data.text = userForm.text.value;
 	  vm.data.date = Date.now();
+	  vm.data.author = authentication.currentUser().name;
+	  vm.data.email = authentication.currentUser().email;
 
 	  blogsCreate($http, authentication, vm.data)
 	    .then(function onSuccess(response) {

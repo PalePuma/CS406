@@ -12,7 +12,9 @@ module.exports.blogsCreate = function (req, res) {
 	Blog.create({
 	 blogTitle: req.body.title,
 	 blogText: req.body.text,
-	 createdOn: req.body.date
+	 createdOn: req.body.date,
+         authorName: req.body.author,
+	 authorEmail: req.body.email
 	},
 	function(err, blog) {
 	  if(err) {

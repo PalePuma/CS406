@@ -38,12 +38,15 @@
        <div class="card-body">
         <h5 class ="card-title">{{ blog.blogTitle  }}</h5>
 	<p>{{ blog.blogText  }}</p>
-        <p>{{ blog.createdOn | date:'MMMM dd, yyyy - h:mm a'}}</p>
-       </div>
+              </div>
 
-       <div class="card-footer" ng-show="vm.isLoggedIn">
+       <div class="card-footer" style="padding: 1rem 0rem 0rem 1rem">
          <div class = "col-sm">
-           <ul class="nav justify-content-end nav-pills card-header-pills">
+ 	   <p style="float: left;">
+	      Published by <strong>{{ blog.authorName }}</strong>
+	      <br>{{ blog.createdOn | date:'MMMM dd, yyyy - h:mm a'}}
+	   </p>
+           <ul class="nav justify-content-end nav-pills card-header-pills" ng-show="vm.currentUser.email === blog.authorEmail">
              <li class="nav-item">
                <a class="nav-link text-success" href="#!/edit-blog/{{ blog._id  }}">Edit</a>
              </li>
