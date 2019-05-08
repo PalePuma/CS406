@@ -44,5 +44,6 @@ process.on('SIGTERM', function() {
 }); });
 
 // Bring in Schemas
+require('./games');
 require('./blogs');
 require('./users');

@@ -1,15 +1,21 @@
 <!-- Navigation -->  
 <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-success">
-    <a class="navbar-brand" href="#!/">My Blog</a>
+    <a class="navbar-brand" href="#!/"><strong>Home</strong></a>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 	<ul class="navbar-nav">
-	   <li><a class="nav-item nav-link active" href="#!/blog-list">Blog List</a></li>
+        <li><a class="nav-item nav-link active">||</a></li>
+        <li><a class="nav-item nav-link active" href="#!/game-list">View Games</a></li>
+        <li><a ng-show="navvm.isLoggedIn()" class="nav-item nav-link active" href="#!new-game">New Game</a></li>
+        <li><a class="nav-item nav-link active">||</a></li>
+	   <li><a class="nav-item nav-link active" href="#!/blog-list">Blog List</a></li>       
 	   <li><a ng-show="navvm.isLoggedIn()" class="nav-item nav-link active" href="#!/add-blog">Add Blog</a></li>
+       <li><a class="nav-item nav-link active">||</a></li>
+
 	</ul>
     </div>
     <ul class="nav navbar-nav navbar-right" style="text-align: center;">
 	<li><a ng-show="!navvm.isLoggedIn()" class="nav-item nav-link active" href="#!/login">Sign<br>In</a></li>
 
-        <li><a ng-show="navvm.isLoggedIn()" class="nav-item nav-link active" href="#!/blog-list" ng-click="navvm.logout()">Logout<br><small>{{ navvm.currentUser().email }}</small></a></li>
+        <li><a ng-show="navvm.isLoggedIn()" class="nav-item nav-link active" href="#!/game-list" ng-click="navvm.logout()">Logout<br><small>{{ navvm.currentUser().email }}</small></a></li>
     </ul>
 </nav><br>

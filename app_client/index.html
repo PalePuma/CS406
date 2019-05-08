@@ -6,7 +6,7 @@
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <meta charset="utf-8">
-  <title>David's Blog</title>
+  <title>Connect Four</title>
 </head>
 <body>
 
@@ -17,13 +17,249 @@
   <!-- Angular View -->
   <div ng-view></div>
  
-  <!-- Angular Templates -->
+  <!-- Templates -->
   <script type="text/ng-template" id="blog-home">
    <div class="container">
       <p><h2>{{ vm.pageHeading }}</h2></p>
-      <p>Welcome to my blog!</p>
+      <p>Welcome! Play a round of connect four, then write a blog post about it!</p>
    </div>
   </script>
+
+  <!-- Game Templates -->
+  <script type="text/ng-template" id="game-list">
+  <div class="container">
+   <p><h2>{{ vm.pageHeading }}</h2></p>
+
+   <p class="lead" ng-show="vm.isLoggedIn">
+      Join an existing game or start a <a href="#!/new-game">New Game</a>.
+   </p>
+
+   <p class="lead" ng-hide="vm.isLoggedIn">
+      You must <a href="#!/login">Sign In</a> to play Connect Four.
+   </p>
+
+   <div class="card border-success" ng-repeat="game in vm.games"
+   style="width: 50%; border-width: 2px; margin-bottom: 30px;">
+
+       <div class="card-header text-center" >
+		<h4>
+		<a class="badge badge-success p-2 m-1" href="#!/play/{{ game._id }}" ng-show="vm.currentUser.email === game.player1.userEmail" >
+		Play Now
+		</a>
+		</h4>
+       </div>
+
+       <div class="card-body text-center">
+         <h6 class ="card-title">
+
+          <p>
+            <strong>Winner: </strong>Undecided
+          </p>
+
+          <span class="badge badge-pill badge-danger">RED</span>
+            &nbsp;{{ game.gameName }}&nbsp;
+         <span class="badge badge-pill badge-dark">BLACK</span></h6>
+
+       </div>
+
+       <div class="card-footer" style="padding: 1rem 0rem 0rem 1rem">
+         <div class = "col-sm">
+     <p style="float: left;">
+        Started by <strong>{{ game.player1.nickname }}</strong>
+        <br>{{ game.start | date:'MMMM dd, yyyy - h:mm a'}}
+     </p>
+           <ul class="nav justify-content-end nav-pills card-header-pills">
+             <li class="nav-item m-1" ng-show="vm.isLoggedIn">
+            
+               <a class="btn btn-outline-danger btn-sm" ng-href="#!/new-game"
+                ng-click="vm.deleteClick(game._id)" ng-show="vm.isLoggedIn">
+                  Delete Game
+                </a>
+
+             </li>
+             <li class="nav-item m-1">
+               
+               <a class="btn btn-outline-primary btn-sm" href="#!/play/{{ game._id }}">
+                   Watch Game
+                </a>
+
+             </li>
+           </ul>
+         </div>
+       </div>
+   </div>
+  </div> 
+  </script>
+
+  <script type="text/ng-template" id="new-game">
+  <div class="container">
+  <p><h2>{{ vm.pageHeading }}</h2></p>
+
+   <div class="card border-success" style="width: 50%; border-width: 2px;">
+
+     <form name="userForm" ng-submit="vm.submit()" action="#!/game-list" method="post" style="padding: 20px;">
+        <hr>
+        <div class="form-group">
+          <label style="width: 85%">
+            
+            <h4><strong>Player 1&nbsp;&nbsp;</strong><span class="badge badge-pill badge-danger">RED</span></h4>
+            
+            <input class="form-control m-3" 
+                   id="p1email" name="p1email"
+                   value="{{ vm.currentUser.email }}"
+            disabled>
+
+            <p><strong>Nickname</strong>:<p>
+            <input class="form-control m-3" id="p1nick" name="p1nick" value="{{ vm.currentUser.name }}" disabled>
+
+          </label>
+        </div>
+
+
+        <div class="row">
+              <div class="col"><hr></div>
+              <div class="col-auto text-success"><strong>VS</strong></div>
+              <div class="col"><hr></div>
+        </div>
+
+
+        <div class="form-group">
+          <label style="width: 85%">
+            
+            <br><h4><strong>Player 2&nbsp;&nbsp;</strong><span class="badge badge-pill badge-dark">BLACK</span></h4><br>
+
+            <label for="opponent"><strong>Pick an Opponent</strong></label>
+              <select id="opponent"
+                      name="opponent" 
+                      class="form-control m-3"
+                      ng-selected="true">
+
+                      <option ng-repeat="item in vm.users" value="{{item.name}}">{{item.name}}</option>
+              </select>
+
+          </label>
+        </div>
+        <hr>
+
+        <div class="text-right">
+            <input type="submit" class="btn btn-success" value="Start Game">
+        </div>
+
+     </form>
+   </div>
+  </div> <!-- container -->
+  </script>
+
+  <script type="text/ng-template" id="play">
+  <div class="container text-center">
+   <p><h2>Connect Four</h2></p>
+
+   <div class="card border-success" 
+   style="border-width: 3px;">
+
+      <div class="card-header text-center">
+        <h5 class ="card-title">
+<span class="badge badge-pill badge-danger">RED</span>
+            &nbsp;{{ vm.game.gameName }}&nbsp;
+         <span class="badge badge-pill badge-dark">BLACK</span></h5>
+      </h5>
+      </div>
+
+      <div class="card-body p-3" style="white-space: nowrap;">
+
+        <div style="display: block; height: 0px; margin-bottom: 80px" ng-show="vm.isLoggedIn" >
+
+          <input class="border border-dark p-3 m-2"
+                 type="button" class="btn btn-light"
+                 ng-class = "{'btn-danger': hover1}"
+                 ng-mouseover = "hover1 = true"
+                 ng-mouseleave = "hover1 = false"
+                 ng-click = "vm.dropPiece(0)"
+                 style = "border-radius: 100%;"                 
+                 value = "   " >
+          &nbsp;
+          <input class="border border-dark p-3 m-2"
+                 type="button" class="btn btn-success"
+                 ng-class = "{'btn-danger': hover2}"
+                 ng-mouseover = "hover2 = true"
+                 ng-mouseleave = "hover2 = false"
+                 ng-click = "vm.dropPiece(1)"
+                 style = "border-radius: 100%;"
+                 value = "   " >
+          &nbsp;
+          <input class="border border-dark p-3 m-2"
+                 type="button" class="btn btn-success"
+                 ng-class = "{'btn-danger': hover3}"
+                 ng-mouseover = "hover3 = true"
+                 ng-mouseleave = "hover3 = false"
+                 ng-click = "vm.dropPiece(2)"
+                 style = "border-radius: 100%;"
+                 value = "   " >
+          &nbsp;
+          <input class="border border-dark p-3 m-2"
+                 type="button" class="btn btn-success"
+                 ng-class = "{'btn-danger': hover4}"
+                 ng-mouseover = "hover4 = true"
+                 ng-mouseleave = "hover4 = false"
+                 ng-click = "vm.dropPiece(3)"
+                 style = "border-radius: 100%;"
+                 value = "   " >
+          &nbsp;
+          <input class="border border-dark p-3 m-2"
+                 type="button" class="btn btn-success"
+                 ng-class = "{'btn-danger': hover5}"
+                 ng-mouseover = "hover5 = true"
+                 ng-mouseleave = "hover5 = false"
+                 ng-click = "vm.dropPiece(4)"
+                 style = "border-radius: 100%;"
+                 value = "   " >
+          &nbsp;
+          <input class="border border-dark p-3 m-2"
+                 type="button" class="btn btn-success"
+                 ng-class = "{'btn-danger': hover6}"
+                 ng-mouseover = "hover6 = true"
+                 ng-mouseleave = "hover6 = false"
+                 ng-click = "vm.dropPiece(5)"
+                 style = "border-radius: 100%;"
+                 value = "   " >
+          &nbsp;
+          <input class="border border-dark p-3 m-2"
+                 type="button" class="btn btn-success"
+                 ng-class = "{'btn-danger': hover7}"
+                 ng-mouseover = "hover7 = true"
+                 ng-mouseleave = "hover7 = false"
+                 ng-click = "vm.dropPiece(6)"
+                 style = "border-radius: 100%;"
+                 value = "   " >
+
+        </div>
+
+        <div class="text-center bg-primary m-4" style="display: inline-block;">
+
+        <div ng-repeat = "col in vm.gameBoard" style="display: inline-block;" class="m-3">
+
+        <div ng-repeat="cell in vm.gameBoard[$index] track by $index"
+        class = "btn-group-toggle p-1">
+          <label class = "btn btn-light"
+                 ng-class = "{
+                               'bg-danger': cell.checked && cell.color == 'red',
+                               'bg-dark': cell.checked && cell.color == 'black'
+                             }"          
+                 style = "border-radius: 100%;"
+          >
+          &nbsp;
+          <input type="checkbox" ng-model="cell.checked" disabled>
+
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div ng-hide="vm.isLoggedIn" class="btn btn-success btn-lg active m-4" style="display: block;">Spectator Mode</div>
+  </div> 
+  </script>
+
+  <!-- Blog Templates -->
 
   <script type="text/ng-template" id="blog-list">
   <div class="container">
