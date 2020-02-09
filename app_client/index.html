@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html ng-app="blogApp">
+<head>
+  <script src="/js/angular.min.js"></script>
+  <script src="/js/angular-route.min.js"></script>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <title>MEAN Blogger</title>
+</head>
+<body>
+
+  <div ng-controller="NavigationCtrl">
+	<navigation></navigation>  
+  </div>
+
+  <!-- Angular View -->
+  <div ng-view></div>
+ 
+  <!-- Templates -->
+  <script type="text/ng-template" id="blog-home">
+  <div class="container">
+  <div style="text-align: center;margin: 35px 0px;">
+    <strong style="font-size: x-large;margin-right: 35px;">{{ vm.pageHeading }}</strong>
+    <span style="font-size: larger;">Say what you mean &amp; mean what you say!</span>
+  </div>
+  <div class="border-top my-1"></div>
+  
+  <ul style="list-style-type: none;font-size: larger;text-align: center;margin: 25px 0px;">
+    <li style="padding-bottom: 20px;">
+      <span style="font-size: xx-large;margin-right: 16px;">&#128100;</span>
+      <a href="#!/login" style="text-decoration: underline;">Sign In</a> or 
+      <a href="#!/register" style="text-decoration: underline;">Create an Account ➞</a>
+    </li>
+    <li style="padding-bottom: 20px;">
+      <span style="font-size: xx-large;margin-right: 18px;">&#128221;</span>
+      <a href="#!/blog-list" style="text-decoration: underline;">Write a blog post ➞</a>
+    </li>
+    <li>
+      <span style="font-size: xx-large;margin-right: 16px;">&#127922;</span>
+      <a href="#!/game-list" style="text-decoration: underline;">Play a game ➞</a>
+    </li>
+  </ul>
+  <div class="border-top my-1"></div>
+
+  <div class="card border-success ng-scope" style="width: 48%; border-width: 2px; margin: 23px 0px;float: left;">
+  <div class="card-header" style="padding: 8px 0px 0px 12px;">
+    <h6>Built with <a href="https://en.wikipedia.org/wiki/MEAN_(software_bundle)">MEAN</a> stack:</h6>
+  </div>
+  <div class="card-body" style="text-align: center;margin: 6px;padding: 0px;">
+    <ul style="list-style-type: none;padding-left: 0px;margin: 4px 0px;">
+      <a href="https://www.mongodb.com/"><li>
+        <img src="https://user-images.githubusercontent.com/35986101/74109067-2fe64400-4b78-11ea-8a6d-99e31a83e4d2.png" alt="mongoDB Logo" style="height: 50px;width: 50px;margin: 0px 11px 6px 16px;">
+        mongoDB
+      </li></a>
+      <a href="https://expressjs.com/"><li>
+        <img src="https://user-images.githubusercontent.com/35986101/74109083-53a98a00-4b78-11ea-986c-ea8e4f3e768c.png" alt="Express Logo" style="height: 43px;width: 43px;margin: 0px 14px 6px 15px;">
+        Express.js
+      </li></a>
+      <a href="https://angularjs.org/"><li>
+        <img src="https://user-images.githubusercontent.com/35986101/74109103-7a67c080-4b78-11ea-942a-d25f47647c91.png" alt="AngularJS Logo" style="height: 46px;width: 46px;margin: 0px 13px 6px 18px;">
+        AngularJS
+      </li></a>
+      <a href="https://nodejs.org"><li>
+        <img src="https://user-images.githubusercontent.com/35986101/74109116-a3885100-4b78-11ea-8f78-b8698e02d6d0.png" alt="Node Logo" style="height: 48px;width: 48px;margin: 0px 12px 0px 1px;">
+        Node.js
+      </li></a>
+    </ul>
+  </div>
+  <div class="card-footer" style="">
+    <strong>
+      Source Code:&nbsp;&nbsp;<a href="https://github.com/PalePuma/CS406">GitHub.com/PalePuma/CS406</a>
+    </strong>
+  </div>
+  </div>
+
+  <div class="card border-success ng-scope" style="width: 48%; border-width: 2px; margin: 23px 0px;float: right;">
+  <div class="card-header" style="padding: 8px 0px 0px 12px;">
+    <h6>Created by:</h6>
+  </div>
+  <div class="card-body" style="margin: 16px 0px;padding: 0px;">
+    <ul style="list-style-type: none;">
+      <li>
+        <a href="https://GitHub.com/PalePuma"><img src="https://user-images.githubusercontent.com/35986101/74109207-6bcdd900-4b79-11ea-88c7-6011d96bf2ae.png" alt="David Christophel" title="David Christophel" style="float: left;"></a>
+
+        <ul style="list-style-type: none;float: left;padding: 11px;">
+          <li><h3>David Christophel</h3></li>
+            <a href="https://GitHub.com/PalePuma"><li>
+              <img src="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/24/github.png">
+              &nbsp;<strong>GitHub.com/PalePuma</strong>
+            </li></a>
+        </ul>
+
+      </li>
+    </ul>
+  </div>
+  <div class="card-footer" style="padding-bottom: 8px;">
+    <ul style="list-style-type: none;padding: 3px;">
+      <li>
+        <img src="https://user-images.githubusercontent.com/35986101/74109134-c31f7980-4b78-11ea-8419-46dd5e025d2c.png" alt="Millersville University Logo" style="height: 59px;float: left;margin-right: 18px;">
+
+        <ul style="list-style-type: none;">
+          <li>Millersville University Computer Science</li>
+          <li><a href="http://cs.millersville.edu/~trogers/csci406/2019_spring/schedule.html">
+            CS406 - Advanced Web Development
+          </a></li>
+        </ul>
+
+      </li>
+    </ul>
+  </div>
+  </div>
+  </div>
+ </script>
+
+  <!-- Game Templates -->
+  <script type="text/ng-template" id="game-list">
+  <div class="container">
+   <p><h2>{{ vm.pageHeading }}</h2></p>
+
+   <p class="lead" ng-show="vm.isLoggedIn">
+      Join an existing game or start a <a href="#!/new-game">New Game</a>.
+   </p>
+
+   <p class="lead" ng-hide="vm.isLoggedIn">
+      You must <a href="#!/login">Sign In</a> to play Connect Four.
+   </p>
+
+   <div class="card border-success" ng-repeat="game in vm.games"
+   style="width: 50%; border-width: 2px; margin-bottom: 30px;">
+
+       <div class="card-header text-center" >
+		<h4>
+		<a class="badge badge-success p-2 m-1" href="#!/play/{{ game._id }}" ng-show="vm.currentUser.email === game.player1.userEmail" >
+		Play Now
+		</a>
+		</h4>
+       </div>
+
+       <div class="card-body text-center">
+         <h6 class ="card-title">
+
+          <p>
+            <strong>Winner: </strong>Undecided
+          </p>
+
+          <span class="badge badge-pill badge-danger">RED</span>
+            &nbsp;{{ game.gameName }}&nbsp;
+         <span class="badge badge-pill badge-dark">BLACK</span></h6>
+
+       </div>
+
+       <div class="card-footer" style="padding: 1rem 0rem 0rem 1rem">
+         <div class = "col-sm">
+     <p style="float: left;">
+        Started by <strong>{{ game.player1.nickname }}</strong>
+        <br>{{ game.start | date:'MMMM dd, yyyy - h:mm a'}}
+     </p>
+           <ul class="nav justify-content-end nav-pills card-header-pills">
+             <li class="nav-item m-1" ng-show="vm.isLoggedIn">
+            
+               <a class="btn btn-outline-danger btn-sm" ng-href="#!/new-game"
+                ng-click="vm.deleteClick(game._id)" ng-show="vm.isLoggedIn">
+                  Delete Game
+                </a>
+
+             </li>
+             <li class="nav-item m-1">
+               
+               <a class="btn btn-outline-primary btn-sm" href="#!/play/{{ game._id }}">
+                   Watch Game
+                </a>
+
+             </li>
+           </ul>
+         </div>
+       </div>
+   </div>
+  </div> 
+  </script>
+
+  <script type="text/ng-template" id="new-game">
+  <div class="container">
+  <p><h2>{{ vm.pageHeading }}</h2></p>
+
+   <div class="card border-success" style="width: 50%; border-width: 2px;">
+
+     <form name="userForm" ng-submit="vm.submit()" action="#!/game-list" method="post" style="padding: 20px;">
+        <hr>
+        <div class="form-group">
+          <label style="width: 85%">
+            
+            <h4><strong>Player 1&nbsp;&nbsp;</strong><span class="badge badge-pill badge-danger">RED</span></h4>
+            
+            <input class="form-control m-3" 
+                   id="p1email" name="p1email"
+                   value="{{ vm.currentUser.email }}"
+            disabled>
+
+            <p><strong>Nickname</strong>:<p>
+            <input class="form-control m-3" id="p1nick" name="p1nick" value="{{ vm.currentUser.name }}" disabled>
+
+          </label>
+        </div>
+
+
+        <div class="row">
+              <div class="col"><hr></div>
+              <div class="col-auto text-success"><strong>VS</strong></div>
+              <div class="col"><hr></div>
+        </div>
+
+
+        <div class="form-group">
+          <label style="width: 85%">
+            
+            <br><h4><strong>Player 2&nbsp;&nbsp;</strong><span class="badge badge-pill badge-dark">BLACK</span></h4><br>
+
+            <label for="opponent"><strong>Pick an Opponent</strong></label>
+              <select id="opponent"
+                      name="opponent" 
+                      class="form-control m-3"
+                      ng-selected="true">
+
+                      <option ng-repeat="item in vm.users" value="{{item.name}}">{{item.name}}</option>
+              </select>
+
+          </label>
+        </div>
+        <hr>
+
+        <div class="text-right">
+            <input type="submit" class="btn btn-success" value="Start Game">
+        </div>
+
+     </form>
+   </div>
+  </div> <!-- container -->
+  </script>
+
+  <script type="text/ng-template" id="play">
+  <div class="container text-center">
+   <p><h2>Connect Four</h2></p>
+
+   <div class="card border-success" 
+   style="border-width: 3px;">
+
+      <div class="card-header text-center">
+        <h5 class ="card-title">
+<span class="badge badge-pill badge-danger">RED</span>
+            &nbsp;{{ vm.game.gameName }}&nbsp;
+         <span class="badge badge-pill badge-dark">BLACK</span></h5>
+      </h5>
+      </div>
+
+      <div class="card-body p-3" style="white-space: nowrap;">
+
+        <div style="display: block; height: 0px; margin-bottom: 80px" ng-show="vm.isLoggedIn" >
+
+          <input class="border border-dark p-3 m-2"
+                 type="button" class="btn btn-light"
+                 ng-class = "{'btn-danger': hover1}"
+                 ng-mouseover = "hover1 = true"
+                 ng-mouseleave = "hover1 = false"
+                 ng-click = "vm.dropPiece(0)"
+                 style = "border-radius: 100%;"                 
+                 value = "   " >
+          &nbsp;
+          <input class="border border-dark p-3 m-2"
+                 type="button" class="btn btn-success"
+                 ng-class = "{'btn-danger': hover2}"
+                 ng-mouseover = "hover2 = true"
+                 ng-mouseleave = "hover2 = false"
+                 ng-click = "vm.dropPiece(1)"
+                 style = "border-radius: 100%;"
+                 value = "   " >
+          &nbsp;
+          <input class="border border-dark p-3 m-2"
+                 type="button" class="btn btn-success"
+                 ng-class = "{'btn-danger': hover3}"
+                 ng-mouseover = "hover3 = true"
+                 ng-mouseleave = "hover3 = false"
+                 ng-click = "vm.dropPiece(2)"
+                 style = "border-radius: 100%;"
+                 value = "   " >
+          &nbsp;
+          <input class="border border-dark p-3 m-2"
+                 type="button" class="btn btn-success"
+                 ng-class = "{'btn-danger': hover4}"
+                 ng-mouseover = "hover4 = true"
+                 ng-mouseleave = "hover4 = false"
+                 ng-click = "vm.dropPiece(3)"
+                 style = "border-radius: 100%;"
+                 value = "   " >
+          &nbsp;
+          <input class="border border-dark p-3 m-2"
+                 type="button" class="btn btn-success"
+                 ng-class = "{'btn-danger': hover5}"
+                 ng-mouseover = "hover5 = true"
+                 ng-mouseleave = "hover5 = false"
+                 ng-click = "vm.dropPiece(4)"
+                 style = "border-radius: 100%;"
+                 value = "   " >
+          &nbsp;
+          <input class="border border-dark p-3 m-2"
+                 type="button" class="btn btn-success"
+                 ng-class = "{'btn-danger': hover6}"
+                 ng-mouseover = "hover6 = true"
+                 ng-mouseleave = "hover6 = false"
+                 ng-click = "vm.dropPiece(5)"
+                 style = "border-radius: 100%;"
+                 value = "   " >
+          &nbsp;
+          <input class="border border-dark p-3 m-2"
+                 type="button" class="btn btn-success"
+                 ng-class = "{'btn-danger': hover7}"
+                 ng-mouseover = "hover7 = true"
+                 ng-mouseleave = "hover7 = false"
+                 ng-click = "vm.dropPiece(6)"
+                 style = "border-radius: 100%;"
+                 value = "   " >
+
+        </div>
+
+        <div class="text-center bg-primary m-4" style="display: inline-block;">
+
+        <div ng-repeat = "col in vm.gameBoard" style="display: inline-block;" class="m-3">
+
+        <div ng-repeat="cell in vm.gameBoard[$index] track by $index"
+        class = "btn-group-toggle p-1">
+          <label class = "btn btn-light"
+                 ng-class = "{
+                               'bg-danger': cell.checked && cell.color == 'red',
+                               'bg-dark': cell.checked && cell.color == 'black'
+                             }"          
+                 style = "border-radius: 100%;"
+          >
+          &nbsp;
+          <input type="checkbox" ng-model="cell.checked" disabled>
+
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div ng-hide="vm.isLoggedIn" class="btn btn-success btn-lg active m-4" style="display: block;">Spectator Mode</div>
+  </div> 
+  </script>
+
+  <!-- Blog Templates -->
+
+  <script type="text/ng-template" id="blog-list">
+  <div class="container">
+   <p><h2>{{ vm.pageHeading }}</h2></p>
+   
+   <p class="lead" ng-hide="vm.isLoggedIn">
+      You must <a href="#!/login">Sign In</a> to publish a blog post.
+   </p>
+
+   <div class="card border-success" ng-repeat="blog in vm.blogs"
+   style="width: 50%; border-width: 2px; margin-bottom: 30px;">
+
+       <div class="card-header">
+       </div>
+
+       <div class="card-body">
+        <h5 class ="card-title">{{ blog.blogTitle  }}</h5>
+	<p>{{ blog.blogText  }}</p>
+              </div>
+
+       <div class="card-footer" style="padding: 1rem 0rem 0rem 1rem">
+         <div class = "col-sm">
+ 	   <p style="float: left;">
+	      Published by <strong>{{ blog.authorName }}</strong>
+	      <br>{{ blog.createdOn | date:'MMMM dd, yyyy - h:mm a'}}
+	   </p>
+           <ul class="nav justify-content-end nav-pills card-header-pills" ng-show="vm.currentUser.email === blog.authorEmail">
+             <li class="nav-item">
+               <a class="nav-link text-success" href="#!/edit-blog/{{ blog._id  }}">Edit</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link text-success" href="#!/delete-blog/{{ blog._id }}">Delete</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+   </div>
+  </div> 
+  </script>
+
+  <script type="text/ng-template" id="add-blog">
+  <div class="container">
+  <p><h2>{{ vm.pageHeading }}</h2></p>
+
+   <div class="card border-success" style="width: 50%; border-width: 2px;">
+
+     <form name="userForm" ng-submit="vm.submit()" action="#!/blog-list" method="post" style="padding: 20px;">
+        <div class="form-group">
+          <label style="width: 100%">
+            <strong>Blog Title</strong>
+            <input class="form-control" id="title" name="title">
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label style="width: 100%">
+            <strong>Blog Text</strong>
+            <textarea class="form-control" id="text" name="text" rows="5"></textarea>
+          </label>
+        </div>
+
+        <div class="text-right">
+	  <input type="submit" class="btn btn-success" value="Add Blog">
+	</div>
+     </form>
+   </div>
+  </div> <!-- container -->
+  </script>
+
+  <script type="text/ng-template" id="delete-blog">
+  <div class="container">
+  <p><h2>{{ vm.pageHeading }}</h2></p>
+
+   <div class="card border-success" style="width: 50%; border-width: 2px;">
+
+     <form ng-submit="vm.submit()" action="#!/blog-list" style="padding: 20px;">
+        <div class="form-group">
+          <label style="width: 100%">
+            <strong>Blog Title</strong>
+            <input class="form-control" type="text" value="{{ vm.blog.blogTitle }}" readonly>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label style="width: 100%">
+            <strong>Blog Text</strong>
+            <textarea class="form-control" rows="5" readonly>{{ vm.blog.blogText }}</textarea>
+          </label>
+        </div>
+
+        <div class="text-right">
+          <input class="btn btn-danger float-right" value="Delete" type="submit">
+	  <a class="btn btn-secondary float-right" style="margin-right: 20px" href="#!/blog-list" role="button">Cancel</a>
+        </div>
+     </form>
+   </div>
+  </div> <!-- container -->
+  </script>
+
+  <script type="text/ng-template" id="edit-blog">
+  <div class="container">
+  <p><h2>{{ vm.pageHeading }}</h2></p>
+
+   <div class="card border-success" style="width: 50%; border-width: 2px;">
+
+     <form ng-submit="vm.submit()" name="userForm" method="post" action="#!/blog-list" style="padding: 20px;">
+        <div class="form-group">
+          <label style="width: 100%">
+            <strong>Blog Title</strong>
+            <input class="form-control" id="title" name="title" type="text" value="{{ vm.oldData.blogTitle }}">
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label style="width: 100%">
+            <strong>Blog Text</strong>
+            <textarea id="text" name="text" class="form-control" rows="5">{{ vm.oldData.blogText }}</textarea>
+          </label>
+        </div>
+
+        <div class="text-right">
+          <input class="btn btn-success float-right" value="Save Changes" type="submit">
+	  <a class="btn btn-secondary float-right" style="margin-right: 20px" href="#!/blog-list" role="button">Cancel</a>
+        </div>
+     </form>
+   </div>
+  </div> <!-- container -->
+  </script>
+
+  <script type="text/ng-template" id="register">
+   <div class="container">
+
+      <p><h2>{{ vm.pageHeading.title  }}</h2></p>
+      <p class="lead">Already a member? Please <a href="#!/login">log in</a> instead.</p>
+     
+    <div class="card border-success" style="width: 50%; border-width: 2px;">
+      <form ng-submit="vm.submit()" style="padding: 20px;">
+        <div role="alert" ng-show="vm.formError" class="alert alert-danger">{{ vm.formError }}</div>
+        <div class="form-group">
+          <label for="name"><strong>Full name</strong></label>
+          <input type="text" class="form-control" id="name" placeholder="First & Last" ng-model="vm.credentials.name">
+        </div>
+        <div class="form-group">
+          <label for="email"><strong>Email address</strong></label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email address" ng-model="vm.credentials.email">
+        </div>
+        <div class="form-group">
+          <label for="password"><strong>Password</strong></label>
+          <input type="password" class="form-control" id="password" placeholder="Create a new password" ng-model="vm.credentials.password">
+        </div>
+        <div class="text-right ">
+          <input class="btn btn-success float-right" value="Create Account" type="submit">
+        </div>
+       </form> 
+     </div>
+   </div> <!-- container -->
+  </script>
+
+  <script type="text/ng-template" id="login">
+   <div class="container">
+
+      <p><h2>{{ vm.pageHeading.title  }}</h2></p>
+      <p class="lead">Not a member? Please <a href="#!/register?page={{ vm.returnPage }}">register</a> first.</p>
+     
+    <div class="card border-success" style="width: 50%; border-width: 2px;">
+      <form ng-submit="vm.submit()" style="padding: 20px;">
+        <div role="alert" ng-show="vm.formError" class="alert alert-danger">{{ vm.formError }}</div>
+        <div class="form-group">
+           <label for="email"><strong>Email address</strong></label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email address" ng-model="vm.credentials.email">
+        </div>
+        <div class="form-group">
+          <label for="password"><strong>Password</strong></label>
+          <input type="password" class="form-control" id="password" placeholder="Enter password" ng-model="vm.credentials.password">
+        </div>
+        <div class="text-right ">
+          <input class="btn btn-success float-right" value="Sign In" type="submit">
+        </div>
+       </form> 
+     </div>
+   </div> <!-- container -->
+  </script>
+
+
+  <!-- blogApp JavaScript  -->
+  <script src="blogApp.js"></script>
+  <script src="/common/auth/authentication.service.js"></script>
+  <script src="/common/nav/navigation.js"></script>
+
+</body>
+</html>
